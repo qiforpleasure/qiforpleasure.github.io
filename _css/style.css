@@ -1,0 +1,896 @@
+
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+
+
+a img {border: 0;}
+
+
+body {
+	background-repeat: repeat;
+	background-position: center top;
+	/*background-image: url(../_images/graphy.png);*/
+	
+}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+
+body {
+
+	font-family: 'Lato', sans-serif;
+      
+	
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+ul li{ 
+	list-style:none;
+}
+
+a{
+
+	text-decoration:none;
+	color: #ffffff;		
+}
+
+
+article{
+	font: 0.8em;
+	color: #333;	
+}
+
+/* background color for subpage header*/
+.whiteBK{
+	background-color: white;
+}
+
+
+
+
+/* Styling the toggle menu link and hiding it */
+.nav .navtoogle{
+	display: none;	
+	width: 100%;
+	padding: 0.5em 0.5em 0.8em;
+	font-family: 'Lato',Calibri,Arial,sans-serif;
+	font-weight: normal;
+	text-align: left;
+	color: #000;
+	font-size: 1.2em;
+	background: none;	
+	border: none;
+	border-bottom: 4px solid rgb(221, 221, 221);
+	cursor: pointer;
+}
+
+
+/* from component */
+
+
+
+a, li {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Global CSS that are applied for all screen sizes */
+
+
+.nav a {
+		
+	text-decoration: none;
+	-webkit-transition: color .1s, background .1s, height .1s;
+	-moz-transition: color .1s, background .1s, height .1s;
+	-o-transition: color .1s, background .1s, height .1s;
+	-ms-transition: color .1s, background .1s, height .1s;
+	transition: color .1s, background .1s, height .1s;
+}
+
+.nav i{
+	/* Make the font smoother for Chrome */
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/* Remove the blue Webkit background when element is tapped */
+
+a, button {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Hover effect for the whole navigation to make the hovered item stand out */
+
+.no-touch .nav ul:hover a {
+	
+	
+}
+
+.no-touch .nav ul:hover a:hover {
+	color:#000;
+	
+
+}
+
+
+
+/* Windows Chrome ugly fix http://stackoverflow.com/questions/13674808/chrome-svg-font-rendering-breaks-layout/14345363#14345363 */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'icomoon';
+		src: url('../fonts/icomoon.svg#icomoon') format('svg');
+	};
+}
+
+
+
+.icon-team, .icon-blog, .icon-home, .icon-portfolio, .icon-services, .icon-contact, .icon-menu {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-menu:before {
+	content: "\f0c9";
+}
+
+/* Selection colours (easy to forget) 
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}*/
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+
+
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+	
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+
+.element {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+
+.element * {
+	position: absolute;
+}
+.selected{
+  color:#0CF;		
+}
+
+.navlist .selected{
+color: #ff7800;
+border-radius: 4px;
+	
+}
+header{
+	float: left;
+	width: 100%;
+	
+}
+.bread{
+	font-size: 12px;
+	color: #999;
+	display: block;
+	float: left;
+
+	font-weight: 400;
+}
+	.navmain{
+width: 715px;
+position: relative;
+margin: 0 auto;
+height: 40px;
+	}
+
+section iframe{
+	width:100%;
+	height:400px;	
+}
+
+.infolink{
+	color:#3498db;	
+
+}
+#infosection{
+	float:right;
+	top: 12px;
+	position: relative;
+	right: 10px;
+}
+
+#infosection li{
+	float: right;
+	position: relative;
+
+}
+.boldslogan{
+
+	font-weight: 300;
+	font-style: italic;
+/*	font-size: 24px;*/
+
+}	
+
+#infosection li a{
+color: #ffd736;
+font-size: 11px;
+font-weight: 400;
+padding: 5px;
+}
+#infosection li a:hover{
+color: #fff;
+}
+
+#infosection li a img{
+	margin:0px 5px 0px 0px;	
+}
+
+
+#intro{
+	width: 100%;
+	height: 250px;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+background: #ff7800;
+
+}
+
+.ha-header-hide {
+	height: 220px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+	
+
+.introtext2{
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 55px;
+  padding-top: 80px;
+color: #fff;
+font-weight: 200;
+
+	
+}
+
+
+
+
+#footer{
+	
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	border-top: 1px solid #ededed;
+margin-top: 60px;
+background-color: #f6f6f6; /* Old browsers */
+
+
+}
+.copyright p {
+text-align: center;
+padding-top: 100px;
+color: #999;
+font-size: 14px;
+letter-spacing: 0.9px;
+}
+
+
+.copyright a {
+color:#999;
+font-weight: 600;}
+
+
+
+/************************sub page layout********************************/
+.subpage{
+	width: 1100px;
+	margin: 0 auto;
+	margin-top: 20px;
+	
+}
+section{
+	width:100%;
+	margin-top: 20px;
+}
+div > section :first-child{
+	/*margin-top: 50px;*/
+}
+section img{
+	width:100%;
+	height:auto;	
+
+}
+.notes{
+font-family: 'Lato', sans-serif;
+position: relative;
+width: 100%;
+/* padding: 10%; */
+/* margin: 0 auto; */
+margin-bottom: 4px;
+background-color: white;
+font-size: 18px;
+ color: #555; 
+line-height: 1.5em;
+margin:10px 0 10px 0;
+text-align: left;
+font-weight: 300;
+}
+}
+.me{
+	margin-top:60px;	
+}
+.gh2{
+font-size: 35px;
+font-weight: 300;
+color: #2f2f2f;
+margin-top: 50px;
+}
+		
+}
+.gh1{
+	font-size:3em;
+	font-weight:300;	
+	color:#666666;
+		
+}
+.me img{
+width: 30%;
+height: auto;
+position: relative;
+display: block;
+margin-top: 30px;
+margin-bottom: 30px;
+float: left;
+margin-right: 30px;
+
+}
+
+.me p{
+font-size: 1em;
+line-height: 1.5em;
+font-weight: 300;
+margin-bottom: 100px;
+position: relative;	
+}
+.qi{
+
+	color: #ff7800;
+}
+.breadcrumb{
+width: 100%;
+margin-bottom: 20px;
+position: relative;
+	
+}
+.breadcrumb li{
+	
+}
+.breadcrumb li a:hover{
+	color: #222;
+}
+
+
+.subtitle{
+font-family: 'Lato', sans-serif;
+font-size: 2.5em;
+/* position: relative; */
+font-weight: 300;
+color: #2f2f2f;
+/*position: absolute;*/
+
+text-align: center;
+/*width: 90%;
+margin-right: 10%;*/
+border-bottom: 1px #ededed solid;
+
+
+}
+
+.title{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+body {
+	width:100%;
+	height:l00%;
+	z-index: 0;
+}
+#mainpage{
+	width: 1500px;
+margin: 0 auto;
+position: relative;
+z-index: 1;
+
+}
+.me{
+	width: 1024px;
+	height: 515px;
+margin: 0 auto;
+}
+
+
+.header {
+	width: 100%;
+	position: relative;
+	height: 50px;
+	background-color:#ff7800;
+	  border-bottom: 1px dashed orange;
+	
+}
+
+
+#logo {
+width: 50px;
+position: absolute;
+top: 13px;
+margin-left: 13px;
+margin-right: 0;
+z-index: 100;
+}
+#options{
+width: 100%;
+position: relative;
+margin-bottom: 20px;
+background-color: #fff;
+height: 70px;
+border-bottom: 1px dashed #ededed;
+}
+.nav{
+width:100%;
+margin:0 auto;		
+}
+.navlist{
+width: auto;
+position: relative;
+float: left;
+margin-top: 18px;
+	
+}
+.navlist li{
+	float: left;
+	margin-right: 20px;
+
+}
+.navlist li a{
+font-size: 14px;
+color: #000;
+/* padding: 10px 0px; */
+display: block;
+padding: 10px;
+font-weight: 400;
+/* font-weight: 400; */
+/* border-radius: 1px; */
+} 
+#container{	
+	width: 100%;
+	height:100%;
+	min-height: 544px!important;
+}
+.element {
+width: 23%;
+height: 250px;
+margin-bottom: 20px;
+border: 1px #fff solid;
+/* background-color: #d7d7d7; */
+border-radius: 2px;
+
+}
+.element img{
+	max-width:100%;
+	height: auto;
+	border:0;
+	/* allow javascript moves the img position
+	position:absolute;*/
+}
+
+
+.nav_up{
+	padding:7px;
+	
+	border:1px solid #CCC;
+	position:fixed;
+	background:#ededed url(../_images/arrow_up.png) no-repeat top left;
+	background-position:50% 50%;
+	width:20px;
+	height:20px;
+	bottom:350px;
+	opacity:0.7;
+	right:40px;
+	white-space:nowrap;
+	cursor: pointer;
+	-moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+    -khtml-border-top-left-radius:3px;
+	-khtml-border-top-right-radius:3px;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+
+
+/*************************hover on image, shows caption******************************/
+
+.element .caption {
+	width:100%;
+	height:100%;
+	
+	
+	/* fix it at the bottom */
+	position:absolute;
+	left:0;
+	bottom:0;
+
+	/* hide it by default */
+	display:none;
+	background-color: #2f2f2f;
+
+	/* opacity setting */
+	filter:alpha(opacity=100);    /* ie  */
+	-moz-opacity:1;    /* old mozilla browser like netscape  */
+	-khtml-opacity: 1;    /* for really really old safari */  
+	opacity: 1;    /* css standard, currently it works in most modern browsers like firefox,  */
+}
+.captionlink{
+	color: #ff7800;
+	text-decoration: none;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-weight:300;
+		/*padding: 40% 10%;*/
+}
+.element .caption .captionlink p{
+
+	position:relative;
+	margin: 20px;
+	font-size: 26px;
+	margin-top: 40px;
+
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1280px) {
+	
+	
+	#mainpage{
+		width:1200px;
+	}
+	.element { 
+		width: 24%;
+ 	 height: 210px;
+		
+	}
+	.subpage {
+  width: 1024px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+}
+/************************end of caption********************************/
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	
+	#mainpage{
+		width:850px;
+	}
+	.subpage{
+		width:768px;
+	}
+	
+	.navmain {
+		width: 712px;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		height: 60px;
+	}
+	.element { 
+		width: 47%;  
+		height: 290px; 
+		
+	}
+
+
+.navlist{
+	
+	right:0;
+	
+}		
+	.navlist li {
+		float: left;
+		margin-left: 0px;
+		border-left: 1px solid #FFF;
+		margin-bottom: 10px;	
+		margin-right: 18px;	
+	}
+
+
+.me p{
+margin-top: 220px;
+}
+
+
+}
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+
+---------------------------------------------
+cols    1     2      3
+px      68    160    252   
+*/
+
+@media only screen and (max-width: 767px) {
+	
+	#mainpage{
+	width:320px;
+}
+	.subpage{
+	width:320px;
+}
+	.element { 
+	width: 100%;  
+	height: 200px; 
+} 
+	.navmain{
+width: 320px;
+position: relative;
+margin: 0 auto;
+height: 40px;
+	}
+	.navlist {
+	float: left;
+	width: 100%;
+		
+	}
+	.navlist li {
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	}
+
+	/* Unhiding the styled menu link */
+	.nav .navtoogle{
+		margin: 0;
+		display: block;
+	}
+	
+	/* Animating the height of the navigation when the button is clicked */
+	
+	/* When JavaScript is disabled, we hide the menu */
+	.no-js .nav ul {
+		max-height: 30em;
+		overflow: hidden;
+	}
+	
+	/* When JavaScript is enabled, we hide the menu */
+	.js .nav ul {
+		max-height: 0em;
+		overflow: hidden;
+		
+	}
+	
+	/* Displaying the menu when the user has clicked on the button*/
+	.js .nav .active + ul {		
+		max-height: 30em;
+		overflow: hidden;
+		-webkit-transition: max-height .4s;
+		-moz-transition: max-height .4s;
+		-o-transition: max-height .4s;
+		-ms-transition: max-height .4s;
+		transition: max-height .4s;
+		z-index: 1000;
+		margin-bottom: 20px;
+	}
+
+	/* Adapting the layout of the menu for smaller screens : icon on the left and text on the right*/
+	
+	.nav li span {
+		display: inline-block;
+		height: 100%;
+	}
+
+	.nav a {
+		padding: 0.5em;		
+	}
+	
+	.icon + span {
+		margin-left: 1em;
+		font-size: 0.8em;
+	}
+	.introtext2 {
+font-size: 2.5em;
+
+}
+	#infosection li {
+margin-right: 0px;
+margin-left: 0px;
+}
+.me p{
+margin-top: 0px;
+}
+
+}
+
+
+/*iPhone 5:
+@media screen and (device-aspect-ratio: 40/71) {
+#mainpage{
+	width:436px;
+}
+	.subpage{
+	width:436px;
+}
+	.element { 
+	width: 100%;  
+	height: 220px; 
+}
+
+}
+*/
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    
+*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+
+	#mainpage{
+	width:480px;
+}
+	.subpage{
+	width:480px;
+}
+	.element { 
+	width: 100%;  
+	height: 350px; 
+}
+	.navmain{
+	width: 480px;
+	position: relative;
+	margin: 0 auto;
+	height: 40px;
+		}
+	.navlist li {
+
+	margin-right: 0px;
+	}
+	.element .caption .captionlink p {
+		margin: 40px;
+
+  margin-top: 80px;
+}
+	
+}
