@@ -1,531 +1,392 @@
 <!doctype html>
-<html><head>
-		<meta charset="utf-8"/>
+<html>
+
+<head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title></title>
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->	
-      
-      
-		<link href="_css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="_css/normalize.css" />
+    <title></title>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/component.css" />-->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/special.js"></script>
+    <script src="js/fake-element.js"></script>
+    <script src="js/scroll-startstop.events.jquery.js" type="text/javascript"></script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-          <!-- <link rel="stylesheet" type="text/css" href="_css/component.css" />-->
-      <link rel="shortcut icon" href="/_images/favicon.ico" type="image/x-icon">
-<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-      	
-	   
-		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
-     
-		<script src="_js/modernizr.custom.js"></script>
-
-		<script src="_js/jquery-1.7.1.min.js"></script>
-        <script src="jquery.isotope.min.js"></script>  
-        <script src="_js/special.js"></script> 
-        <script src="_js/fake-element.js"></script>     
-    <script src="_js/scroll-startstop.events.jquery.js" type="text/javascript"></script>
-        
-           <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        
-          ga('create', 'UA-43531133-1', 'gao-qi.com');
-          ga('send', 'pageview');
-			
-		</script>
-      
-
+    ga('create', 'UA-43531133-1', 'gao-qi.com');
+    ga('send', 'pageview');
+    </script>
 </head>
-	
 
-
-<body lang="en"><!-- end nav! -->
-
-<div class="header clearfix">
-      <div id="logo"> 
-             <a href="index.html" title="Home Page"> <img src="_images/logo.png" class="logo"> </a> 
-           </div>
-           <!-- end logo! -->
-          
-              <ul id="infosection" class="nav">    
-                         
-                        
-                          <li><a href="https://www.linkedin.com/in/gaoqi" target="_blank">LinkedIn</a></li>
-                          <li><a href="_images/Resume_QiGao.pdf" target="_blank" >Resume</a></li>
-
-                            <li><a href="_pages/aboutme.html" >About</a></li>
-                      
-               </ul>    
-                
-    </div>
-
-
-    <div id="intro" class="ha-waypoint" data-animate-down="ha-header-hide" data-animate-up="ha-header-small">
-    
-            <p class="introtext2">I design simple things <span class="boldslogan">simple.</span></p>
-             
-    
-      
-    </div>
-
-
-
-
-
- <div id="options">
- 
- 		<div class=" navmain">
-            
-                  <nav id="menu" class="nav">	
-        
-                     
-                           <ul id="filters" class="option-set clearfix navlist " data-option-key="filter">
-                             <li><a href="#filter" data-option-value="*" class="selected toworkplace">All</a></li>
-                            <li><a href="#filter" data-option-value=".ui" id="bui" class="toworkplace">UI</a></li> 
-                             <li><a href="#filter" data-option-value=".web" id="bweb" class="toworkplace">Web</a></li>
-                             <li><a href="#filter" data-option-value=".info" id="binfo" class="toworkplace">Information Design</a></li>
-                             
-                          
-                             <li><a href="#filter" data-option-value=".graphic" id="bgraphic" class="toworkplace">Graphic Design</a></li>
-                         
-                             <li><a href="#filter" data-option-value=".motion" id="bmotion" class="toworkplace">Motion Design</a></li>
-                          
-                             <li><a href="#filter" data-option-value=".drawing" id="bdrawing" class="toworkplace">Digital Art</a></li>                          
-                           </ul>
-                       <!-- end navlist! -->
-                       
-            </nav>
-	 </div>
- </div>
-
-
-
- <div id="mainpage">
-
-      <div id="container" >            
-       
-       
-        
-       <!-- starting of ui! ---------------------------------------->    
-                <div class="element item ui toworkplace">
-                     <img src="_images/thumbnail/A_0040_42.jpg" width="550" height="412" alt="placeholder">
-                     <div class="caption">
-                       <a class="captionlink" href="#" id="u11">
-                        <p>Log Analytics Service</p>
-                       </a>
-                     </div>
-                </div> 
-
-
-                  <!--  web! ---------------------------------------->      
-                   <div class="element item web toworkplace">
-                      <img src="_images/thumbnail/A_0035_37.jpg" width="550" height="412" alt="placeholder">
-                         <div class="caption">
-                           <a class="captionlink" href="#" id="w7">
-                            <p>Clarity Landing Page</p>
-                           </a>
-                         </div>
-                  </div>
-
-
-
-                 <div class="element item ui toworkplace">
-                     <img src="_images/thumbnail/A_0025_27.jpg" width="550" height="412" alt="placeholder">
-                         <div class="caption">
-                               <a class="captionlink" href="#" id="u4">
-                                <p>Desktop Application</p>
-                               </a>
-                         </div>
-                  </div> 
-
-                 <div class="element item web toworkplace">
-                       <img src="_images/thumbnail/A_0030_32.jpg" width="550" height="412" alt="placeholder">
-                        <div class="caption">
-                             <a class="captionlink" href="#" id="w6">
-                              <p>Yingkuui Kids Fashion</p>
-                             </a>
-                       </div>
-                </div>
-
-                  <!--  web! ---------------------------------------->
-
-
-         
-
-                <div class="element item ui toworkplace">
-                  <img src="_images/thumbnail/A_0037_39.jpg" width="550" height="412" alt="placeholder">
-                    <div class="caption">
-                               <a class="captionlink" href="#" id="u8">
-                                <p>Nissan iPad Experience</p>
-                               </a>
-                     </div>
-                 </div> 
-                  
-
-             <div class="element item ui toworkplace">
-              <img src="_images/thumbnail/A_0028_30.jpg" width="550" height="412" alt="placeholder">
-              	<div class="caption">
-                           <a class="captionlink" href="#" id="u1">
-                            <p>Office 365 Purchase Flow</p>
-                           </a>
-                </div>
-              </div>
-
-       
-
-            <div class="element item ui toworkplace">
-              <img src="_images/thumbnail/A_0038_40.jpg" width="550" height="412" alt="placeholder">
-                <div class="caption">
-                           <a class="captionlink" href="#" id="u9">
-                            <p>Macy's Management Tool</p>
-                           </a>
-                </div>
-             </div>
-
-
-              <div class="element item ui toworkplace">
-                <img src="_images/thumbnail/A_0039_41.jpg" width="550" height="412" alt="placeholder">
-                  <div class="caption">
-                       <a class="captionlink" href="#" id="u10">
-                        <p>Clarity</p>
-                       </a>
-                </div>
-              </div> 
-
-                  <!--  couldbus web! ---------------------------------------->      
-             <div class="element item web toworkplace">
-              <img src="_images/thumbnail/A_0023_25.jpg" width="550" height="412" alt="placeholder">
-                <div class="caption">
-                           <a class="captionlink" href="#" id="w3">
-                            <p>Cloud Bus Web Design</p>
-                           </a>
-                </div>
-              </div> 
-             <!--  couldbus! ---------------------------------------->
-
-
-       <div class="element item ui toworkplace">
-        <img src="_images/thumbnail/A_0015_17.jpg" width="550" height="412" alt="placeholder">
-          <div class="caption">
-                     <a class="captionlink" href="#" id="u7">
-                      <p>"Try It On" App</p>
-                     </a>
-          </div>
-        </div> 
-
-        
-  
-            <div class="element item ui toworkplace">
-              <img src="_images/thumbnail/A_0016_18.jpg" width="550" height="412" alt="placeholder">
-                <div class="caption">
-                           <a class="captionlink" href="#" id="u6">
-                            <p>Fashion App Redesign</p>
-                           </a>
-                </div>
-             </div> 
-
-
-           <div class="element item info toworkplace">
-              <img src="_images/thumbnail/A_0029_31.jpg" width="550" height="412" alt="placeholder">
-                <div class="caption">
-                           <a class="captionlink" href="#" id="u5">
-                            <p>Infographic for Platform</p>
-                           </a>
-               </div>     
-            </div> 
-      
-
-           <div class="element item graphic toworkplace">
-                <img src="_images/thumbnail/A_0041_43.jpg" width="550" height="412" alt="placeholder">
-                  <div class="caption">
-                             <a class="captionlink" href="#" id="g6">
-                              <p>Machine Data Icons</p>
-                             </a>
-                   </div>
-           </div> 
- 
-     
-     
-       <!-- end of ui! --> 
-       
-  
-       
-       
-       
-       <!-- starting of web! ---------------------------------------->
-
-       
-
-
-          <div class="element item web toworkplace">
-              <img src="_images/thumbnail/A_0036_38.jpg" width="550" height="412" alt="placeholder">
-                <div class="caption">
-                           <a class="captionlink" href="#" id="w2">
-                            <p>Activespace</p>
-                           </a>
-                </div>
-          </div> 
-       
-        
-     
-        
-        
-        <div class="element item web toworkplace">
-        <img src="_images/thumbnail/A_0024_26.jpg" width="550" height="412" alt="placeholder">
-          <div class="caption">
-                     <a class="captionlink" href="#" id="w1">
-                      <p>Web Design "Wanted&Unwanted"</p>
-                     </a>
-          </div>
-        </div> 
-       
-       <!-- end of web! --> 
-             
-         <div class="element item graphic toworkplace">
-            <img src="_images/thumbnail/A_0003_4.jpg" width="550" height="412" alt="placeholder">
-              <div class="caption">
-                         <a class="captionlink" href="#" id="g4">
-                          <p>Logo Design Collection</p>
-                         </a>
-              </div>
+<body lang="en">
+    <!-- end nav! -->
+    <div class="header clearfix">
+        <div id="logo">
+            <a href="index.html" title="Home Page"> <img src="images/logo.png" class="logo"> </a>
         </div>
-
-       
-       
-         <!-- starting of infographic! ---------------------------------------->
-        <div class="element item info toworkplace">
-        <img src="_images/thumbnail/A_0013_15.jpg" width="550" height="412" alt="placeholder">
-        	<div class="caption">
-                     <a class="captionlink" href="#" id="i1">
-                      <p>Twitter vs Sina Weibo</p>
-                     </a>
-          </div>
-        </div> 
-
-         <div class="element item info toworkplace">
-            <img src="_images/thumbnail/A_0033_35.jpg" width="550" height="412" alt="placeholder">
-              <div class="caption">
-                         <a class="captionlink" href="#" id="i2">
-                          <p>UX Strategy</p>
-                         </a>
-              </div>
-        </div> 
-
-
-     
-        <!-- end of infographic! -->  
-       
-       
-       
-       
-        <!-- starting of graphic! ---------------------------------------->    
-
-         
-        <div class="element item graphic toworkplace">
-          <img src="_images/thumbnail/A_0000_1.jpg" width="550" height="412" alt="placeholder">
-          	<div class="caption">
+        <!-- end logo! -->
+        <ul id="infosection" class="nav">
+            <li><a href="https://www.linkedin.com/in/gaoqi" target="_blank">LinkedIn</a></li>
+            <li><a href="images/Resume_QiGao.pdf" target="_blank">Resume</a></li>
+            <li><a href="aboutme.html">About</a></li>
+        </ul>
+    </div>
+    <div id="intro" class="ha-waypoint" data-animate-down="ha-header-hide" data-animate-up="ha-header-small">
+        <p class="introtext2">I design simple things <span class="boldslogan">simple.</span></p>
+    </div>
+    <div id="options">
+        <div class=" navmain">
+            <nav id="menu" class="nav">
+                <ul id="filters" class="option-set clearfix navlist " data-option-key="filter">
+                    <li><a href="#filter" data-option-value="*" class="selected toworkplace">All</a></li>
+                    <li><a href="#filter" data-option-value=".ui" id="bui" class="toworkplace">UX/UI</a></li>
+                    <li><a href="#filter" data-option-value=".web" id="bweb" class="toworkplace">Web</a></li>
+                    <li><a href="#filter" data-option-value=".info" id="binfo" class="toworkplace">Information design</a></li>
+                    <li><a href="#filter" data-option-value=".graphic" id="bgraphic" class="toworkplace">Graphic design</a></li>
+                    <li><a href="#filter" data-option-value=".motion" id="bmotion" class="toworkplace">Motion design</a></li>
+                    <li><a href="#filter" data-option-value=".drawing" id="bdrawing" class="toworkplace">Digital art</a></li>
+                </ul>
+                <!-- end navlist! -->
+            </nav>
+        </div>
+    </div>
+    <div id="mainpage">
+        <div id="container">
+            <!-- starting of ui! ---------------------------------------->
+            <div class="element item ui toworkplace">
+                <img src="images/thumbnail/A_0040_42.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="u11">
+                        <p>Log Analytics Service</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item ui toworkplace">
+                <img src="images/thumbnail/A_0042_44.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="u12">
+                        <p>Salesforce Object Design</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item ui toworkplace">
+                <img src="images/thumbnail/A_0025_27.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="u4">
+                        <p>Desktop Application</p>
+                    </a>
+                </div>
+            </div>
+            <!--  web! ---------------------------------------->
+            <div class="element item web toworkplace">
+                <img src="images/thumbnail/A_0035_37.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="w7">
+                        <p>Clarity Landing Page</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item ui toworkplace">
+                <img src="images/thumbnail/A_0015_17.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="u7">
+                        <p>"Try It On" App</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item web toworkplace">
+                <img src="images/thumbnail/A_0030_32.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="w6">
+                        <p>Yingkuui Kids Fashion</p>
+                    </a>
+                </div>
+            </div>
+            <!--  web! ---------------------------------------->
+            <div class="element item ui toworkplace">
+                <img src="images/thumbnail/A_0037_39.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="u8">
+                        <p>Nissan iPad Experience</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item ui toworkplace">
+                <img src="images/thumbnail/A_0028_30.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="u1">
+                        <p>Office 365 Purchase Flow</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item ui toworkplace">
+                <img src="images/thumbnail/A_0038_40.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="u9">
+                        <p>Macy's Management Tool</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item ui toworkplace">
+                <img src="images/thumbnail/A_0039_41.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="u10">
+                        <p>Clarity</p>
+                    </a>
+                </div>
+            </div>
+            <!--  couldbus web! ---------------------------------------->
+            <div class="element item web toworkplace">
+                <img src="images/thumbnail/A_0023_25.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="w3">
+                        <p>Cloud Bus Web Design</p>
+                    </a>
+                </div>
+            </div>
+            <!--  couldbus! ---------------------------------------->
+            <div class="element item info toworkplace">
+                <img src="images/thumbnail/A_0029_31.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="u5">
+                        <p>Product Infographic</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item ui toworkplace">
+                <img src="images/thumbnail/A_0016_18.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="u6">
+                        <p>Fashion App Redesign</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item graphic toworkplace">
+                <img src="images/thumbnail/A_0041_43.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="g6">
+                        <p>Machine Data Icons</p>
+                    </a>
+                </div>
+            </div>
+            <!-- end of ui! -->
+            <!-- starting of web! ---------------------------------------->
+            <div class="element item web toworkplace">
+                <img src="images/thumbnail/A_0036_38.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="w2">
+                        <p>Activespace</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item web toworkplace">
+                <img src="images/thumbnail/A_0024_26.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="w1">
+                        <p>Web Design "Wanted&Unwanted"</p>
+                    </a>
+                </div>
+            </div>
+            <!-- end of web! -->
+            <div class="element item graphic toworkplace">
+                <img src="images/thumbnail/A_0003_4.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="g4">
+                        <p>Logo Design Collection</p>
+                    </a>
+                </div>
+            </div>
+            <!-- starting of infographic! ---------------------------------------->
+            <div class="element item info toworkplace">
+                <img src="images/thumbnail/A_0013_15.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="i1">
+                        <p>Twitter vs Sina Weibo</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item info toworkplace">
+                <img src="images/thumbnail/A_0033_35.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="i2">
+                        <p>UX Strategy</p>
+                    </a>
+                </div>
+            </div>
+            <!-- end of infographic! -->
+            <!-- starting of graphic! ---------------------------------------->
+            <!--         <div class="element item graphic toworkplace">
+          <img src="images/thumbnail/A_0000_1.jpg" width="550" height="412" alt="placeholder">
+            <div class="caption">
                        <a class="captionlink" href="#" id="g1">
                         <p>Posters “Wanted&Unwanted”</p>
                        </a>
             </div>
-        </div>
-         
-        <div class="element item graphic toworkplace">
-            <img src="_images/thumbnail/A_0002_3.jpg" width="550" height="412" alt="placeholder">
-            	<div class="caption">
-                         <a class="captionlink" href="#" id="g2">
-                          <p>Pin Design</p>
-                         </a>
-              </div>
-        </div>
-         
-        <div class="element item graphic toworkplace">
-            <img src="_images/thumbnail/A_0001_2.jpg" width="550" height="412" alt="placeholder">
-            	<div class="caption">
-                         <a class="captionlink" href="#" id="g3">
-                          <p>Notebook Theme Design</p>
-                         </a>
-              </div>
-        </div> 
-       
-  
-       <!-- end of graphic! --> 
-     
-
-       
-       
-        <!-- starting of motion graphics! ---------------------------------------->
-        
-       
-       
-        
-        <div class="element item motion toworkplace">
-            <img src="_images/thumbnail/A_0022_24.jpg" width="550" height="412" alt="placeholder">
-            	<div class="caption">
-                         <a class="captionlink" href="#" id="o1">
-                          <p>Storyboard Starbucks</p>
-                         </a>
-              </div>
-        </div> 
-        
-        
-        <div class="element item motion toworkplace">
-            <img src="_images/thumbnail/A_0017_19.jpg" width="550" height="412" alt="placeholder">
-            	<div class="caption">
-                         <a class="captionlink" href="#" id="o2">
-                          <p>Nike Station ID</p>
-                         </a>
-              </div>
-        </div>
-         
-         <div class="element item motion toworkplace">
-            <img src="_images/thumbnail/A_0020_22.jpg" width="550" height="412" alt="placeholder">
-            	<div class="caption">
-                         <a class="captionlink" href="#" id="o3">
-                          <p>Yao Ming</p>
-                         </a>
-               </div>
-        </div>
-        
-        <div class="element item motion toworkplace">
-        <img src="_images/thumbnail/A_0018_20.jpg" width="550" height="412" alt="placeholder">
-        	<div class="caption">
-                     <a class="captionlink" href="#" id="o4">
-                      <p>Hello My Dream</p>
-                     </a>
-          </div>
-        </div> 
-
-
-         <div class="element item motion toworkplace">
-          <img src="_images/thumbnail/A_0021_23.jpg" width="550" height="412" alt="placeholder">
-        	 <div class="caption">
-                     <a class="captionlink" href="#" id="o5">
-                      <p>Title Sequence "Red Cliff"</p>
-                     </a>
-           </div>
-        </div>   
-        
-        <div class="element item motion toworkplace">
-        <img src="_images/thumbnail/A_0019_21.jpg" width="550" height="412" alt="placeholder">
-        	<div class="caption">
-                     <a class="captionlink" href="#" id="o6">
-                      <p>Tilte Sequnce "Pure"</p>
-                     </a>
-          </div>
-        </div> 
-        
-       <!-- end of motion graphics! --> 
-      
-         
-         
-       <!-- starting of imaging, but now it belongs to graphic! ---------------------------------------------->
-        <div class="element item graphic toworkplace">
-        	  <img src="_images/thumbnail/A_0008_9.jpg" alt="placeholder">
-        
-          		 <div class="caption">
-                     <a class="captionlink" href="#" id="pic2">
-                      <p>She Smiles in The Rainbow</p>
-                     </a>
+        </div> -->
+            <div class="element item graphic toworkplace">
+                <img src="images/thumbnail/A_0002_3.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="g2">
+                        <p>Pin Design</p>
+                    </a>
                 </div>
-        </div>
-        
-        <div class="element item drawing toworkplace">
-          <img src="_images/thumbnail/A_0009_10.jpg" alt="placeholder">
-          	 <div class="caption">
-                       <a class="captionlink" href="#" id="pic3">
-                        <p>The Lost San Francisco</p>
-                       </a>
             </div>
-        </div>
-                  
-          
-        <div class="element item graphic toworkplace">
-            <img src="_images/thumbnail/A_0012_13.jpg" alt="placeholder">
-            	<div class="caption">
-                         <a class="captionlink" href="#" id="pic5">
-                          <p>My Life My Dream</p>
-                         </a>
-              </div>
-        </div>      
-              
-        <div class="element item graphic toworkplace">
-            <img src="_images/thumbnail/A_0013_14.jpg"  alt="placeholder">
-            	<div class="caption">
-                         <a class="captionlink" href="#" id="pic6">
-                          <p>Tiltshift Effect</p>
-                         </a>
-              </div>
-        </div>
-        
-        
-       <div class="element item drawing toworkplace">
-            <img src="_images/thumbnail/A_0007_8.jpg"  alt="placeholder">
-            	<div class="caption">
-                         <a class="captionlink" href="#" id="pic7">
-                          <p>Cube Distortion</p>
-                         </a>
-             </div>
-        </div>
-        <!-- end of imaging! -->
-        
-        
-        
-        <!-- starting of Digital Art! ---------------------------------------------->
-         <div class="element item drawing toworkplace">
-       		 <img src="_images/thumbnail/A_0005_6.jpg" width="550" height="412" alt="placeholder">
-             	 <div class="caption">
-                     <a class="captionlink" href="#" id="pic8">
-                      <p>Predestination</p>
-                     </a>
+            <div class="element item graphic toworkplace">
+                <img src="images/thumbnail/A_0001_2.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="g3">
+                        <p>Notebook Theme Design</p>
+                    </a>
                 </div>
-        </div>
-        
-        <div class="element item drawing toworkplace">
-       		 <img src="_images/thumbnail/A_0006_7.jpg" width="550" height="412" alt="placeholder">
-             	 <div class="caption">
-                     <a class="captionlink" href="#" id="pic9">
-                      <p>Yingkuui Illustration</p>
-                     </a>
+            </div>
+            <!-- end of graphic! -->
+            <!-- starting of motion graphics! ---------------------------------------->
+            <div class="element item motion toworkplace">
+                <img src="images/thumbnail/A_0022_24.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="o1">
+                        <p>Storyboard Starbucks</p>
+                    </a>
                 </div>
-        </div>
-
-
-        <div class="element item drawing toworkplace">
-       		 <img src="_images/thumbnail/A_0004_5.jpg" width="550" height="412" alt="placeholder">
-             	 <div class="caption">
-                     <a class="captionlink" href="#" id="pic10">
-                      <p>Storyboard Buuble Girl</p>
-                     </a>
+            </div>
+            <div class="element item motion toworkplace">
+                <img src="images/thumbnail/A_0017_19.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="o2">
+                        <p>Nike Station ID</p>
+                    </a>
                 </div>
+            </div>
+            <div class="element item motion toworkplace">
+                <img src="images/thumbnail/A_0020_22.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="o3">
+                        <p>Yao Ming</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item motion toworkplace">
+                <img src="images/thumbnail/A_0018_20.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="o4">
+                        <p>Hello My Dream</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item motion toworkplace">
+                <img src="images/thumbnail/A_0021_23.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="o5">
+                        <p>Title Sequence "Red Cliff"</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item motion toworkplace">
+                <img src="images/thumbnail/A_0019_21.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="o6">
+                        <p>Tilte Sequnce "Pure"</p>
+                    </a>
+                </div>
+            </div>
+            <!-- end of motion graphics! -->
+            <!-- starting of imaging, but now it belongs to graphic! ---------------------------------------------->
+            <div class="element item graphic toworkplace">
+                <img src="images/thumbnail/A_0008_9.jpg" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="pic2">
+                        <p>She Smiles in The Rainbow</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item drawing toworkplace">
+                <img src="images/thumbnail/A_0009_10.jpg" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="pic3">
+                        <p>The Lost San Francisco</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item graphic toworkplace">
+                <img src="images/thumbnail/A_0012_13.jpg" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="pic5">
+                        <p>My Life My Dream</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item graphic toworkplace">
+                <img src="images/thumbnail/A_0013_14.jpg" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="pic6">
+                        <p>Tiltshift Effect</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item drawing toworkplace">
+                <img src="images/thumbnail/A_0007_8.jpg" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="pic7">
+                        <p>Cube Distortion</p>
+                    </a>
+                </div>
+            </div>
+            <!-- end of imaging! -->
+            <!-- starting of Digital Art! ---------------------------------------------->
+            <div class="element item drawing toworkplace">
+                <img src="images/thumbnail/A_0005_6.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="pic8">
+                        <p>Predestination</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item drawing toworkplace">
+                <img src="images/thumbnail/A_0006_7.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="pic9">
+                        <p>Yingkuui Illustration</p>
+                    </a>
+                </div>
+            </div>
+            <div class="element item drawing toworkplace">
+                <img src="images/thumbnail/A_0004_5.jpg" width="550" height="412" alt="placeholder">
+                <div class="caption">
+                    <a class="captionlink" href="#" id="pic10">
+                        <p>Storyboard Buuble Girl</p>
+                    </a>
+                </div>
+            </div>
+            <!-- end of drawing! -->
         </div>
-        <!-- end of drawing! --> 
-     	
-
-    
-     </div> <!-- #container -->
-
-
-
-</div> <!-- end of mainpage! -->
-
-
-
-
-
-<!----------------------------------- thumbnails are above ------------------------------------------>
-
-
-
-
-<!-- starting of UI ! ---------------------------------------->
-
-<!-- Copy start-->
-<!-- <div id="ui1_header" class="whiteBK subHeaderScrollFixed">
+        <!-- #container -->
+    </div>
+    <!-- end of mainpage! -->
+    <!----------------------------------- thumbnails are above ------------------------------------------>
+    <!-- starting of UI ! ---------------------------------------->
+    <!-- Copy start-->
+    <!-- <div id="ui1_header" class="whiteBK subHeaderScrollFixed">
   <div style="width:900px; margin:0 auto;">
     
     <ul class="breadcrumb">
@@ -538,1325 +399,999 @@
     
   </div>
 </div>
- --><!-- Copy end -->
-
- <div id="ui11" class="subpage">
+ -->
+    <!-- Copy end -->
+    <div id="ui11" class="subpage">
         <div>
-     
-           
-           <ul class="breadcrumb">
-              <li><a class="bread" href="index.html">Home ></a></li>
-              <li><a href="#" class="bread sublink" bind="bui">UI ></a></li>
-              <li class="subtitle">
-                <p class="title">Log Analytics Service</p>
-              </li>
-            </ul>
-               <section>
-                <img src="_images/ui/F_0011_12.jpg"  alt="placeholder">
+            <div class="subtitle">
+                <p class="title">Log analytics service</p>
+                <article class="notesbig">
+                    LogLogic Unity is the event processing application for machine data. Log data isn't just for security anymore. Log and machine data is being harnessed to provide insight into IT operational efficiencies.
+                </article>
+            </div>
+            <section>
+                <img src="images/ui/E_001_0.png" alt="placeholder">
             </section>
-            <article class="notes">
-
-LogLogic Unity is the event processing application for machine data. Log data isn't just for security anymore. Log and machine data is being harnessed to provide insight into IT operational efficiencies. As the visual designer for this project, I have been working closely with IXD to accomplish a great solution for this project. We also set up a good working relationship and process with product team in order to achieve better efficiencies. The visual pattern is the key to make everything goes smoothly and benefits the entire team.
-          </article>  
-
             <p class="subtitle title">1.0 design</p>
-                         <article class="notes">
-            The design of 1.0 has been done in a very tight deadline. The goal is more about feature complete and refresh the UI. So at that point, form PM to design team spent more time on the interaction and work flow, on the visual design, I tried to make things as fresh as possible. And the UI has been redesigned in 2.0 after the 1.0 release, I worked closely with PM and UX team to re-think about the color pallete, making sure all the products look consistent in its vertical.<br>
-            The another important redesign is the spacing optimization, the 2.0 has reduced a lot more unused spaces and brought more real estate to the content.
-
-          </article>  
-        
-             <section>
-                <img src="_images/ui/E_002_2.jpg"  alt="placeholder">
-                <img src="_images/ui/E_003_3.jpg"  alt="placeholder">
-                <img src="_images/ui/E_004_4.jpg"  alt="placeholder">
-                <img src="_images/ui/E_005_5.jpg"  alt="placeholder">
-            </section>
-              <p class="subtitle title">Color Study</p>
-
-               <section>
-                <img src="_images/ui/E_006_7.jpg"  alt="placeholder">
-                <img src="_images/ui/E_007_8.jpg"  alt="placeholder">
-                <img src="_images/ui/E_008_9.jpg"  alt="placeholder">
-            </section>
-
-            <p class="subtitle title">2.0 design</p>
-             <article class="notes">
-            In the design 2.0, I have worked closely with PM to figure out the color for the product. Since it is belongs to the Operational group, I neeed to make sure all proudcts look consistent in the group. In 1.0. the flaw is the color was all over the place, in 2.0, I tried to nail down the primary color into 2-3 colors, and it looks way stronger than before in terms of the branding.<br>
-              <section>
-                <img src="_images/ui/E_009_10.jpg"  alt="placeholder">
-            </section>
-
-              <p class="subtitle title">UI Pattern</p>
-             Although the design has been changed quite a lot, but I still documenting the UI patterns through out the process, such as table style, dropdown, checkbox, etc. So the compoments still stays the same thing while its updating. It saves a lot of time for the current and future re-design process.
-                </article>  
-           <section>
-                <img src="_images/ui/E_001_1.png"  alt="placeholder">
-            </section>
-
-          
-    
-      
-          
-              </div>
-          </div> 
-          
-
-<div id="ui1" class="subpage">
-        <div>
-     
-           
-           <ul class="breadcrumb">
-              <li><a class="bread" href="index.html">Home ></a></li>
-              <li><a href="#" class="bread sublink" bind="bui">UI ></a></li>
-              <li class="subtitle">
-                <p class="title">Office 365 Purchase Flow</p>
-              </li>
-            </ul>
-           
-              
-           <section>
-                <img src="_images/web/B_0001_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-          
             <article class="notes">
-         
-
-          The goal was to make the purchase flow easy for users to purchase in different plans and to help users understand the benefits after purchasing. During the flow, the wizard is important to guide users where they are. Overall, the flow gives users a clean and simple purchase user experience and provides the right information at a right time or place.
-          </article>  
-           <section>
-                <img src="_images/web/B_0001_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/web/B_0000_1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/web/B_0002_2a.jpg" width="550" height="412" alt="placeholder">
-            </section>
-    
-        </div>
-</div> 
-    
-
-   
-
-<div id="ui4" class="subpage">
-        <div>
-        
-        <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bui">UI ></a></li>
-            <li class="subtitle"><p class="title">Desktop Application</p></li>
-        </ul>
-    
-    
-    
-           <section>
-                <img src="_images/web/C_0000_1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-      
-            <article class="notes">Desktop Application for Web Apps<br>
-
-        The project is a desktop application for PC users to launch web apps with Single Sign On in order to provide a sticky/quick respond user experience. The product name is Catalist which is a play word from "Catalyst" . The landing page basically reflects the concept "Catalyst" with the inking background, the goal is let users understand the feature of the product and trigger the user action to download. 
-                </article>   
-          <section>
-                <img src="_images/web/E_0011_12.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-             <section>
-                <img src="_images/web/E_0012_13.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            
-             <section>
-                <img src="_images/web/E_0013_14.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/web/E_0014_15.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            
-            <section>
-                <img src="_images/web/E_0015_16.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/interaction/B_0012_14.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/interaction/B_0013_15.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            
-             <section>
-                <img src="_images/interaction/B_0014_17.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            
-            <section>
-                <img src="_images/interaction/B_0015_18.jpg" width="550" height="412" alt="placeholder">
-            </section>
-  
-      
-            
-        </div>
-</div> 
-
-
-
-
-<div id="ui5" class="subpage">
-        <div>
-        
-         <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bui">Infographics ></a></li>
-          <li class="subtitle"><p class="title">Infographic for Platform</p></li>
-          </ul>   
-
-           <section>
-                <img src="_images/info/A_0006_8.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <article class="notes">Infographic for Platform<br> 
-
-
-            </article>  
-            <section>
-                <img src="_images/info/A_0007_9.jpg" width="550" height="412" alt="placeholder">
-            </section>
-          
-    
-        </div>
- </div> 
- 
-
-
-       
-       
-       
-       <div id="ui6" class="subpage">
-        <div>
-
-        
-        <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bui">UI ></a></li>
-           <li class="subtitle"><p class="title">Fashion App Redesign</p></li>
-        </ul>
-    
-    
-            <section>
-                <img src="_images/mobile/A_0000_flashable2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <article class="notes">Fashion App Redesign<br>
-
-            The project is for redesigning the UI for the Fashion iPhone App. The goal is to find the right color palette for the overall branding and clean the visual hierarchy in fonts,color,icons,buttons,etc. 
-            </article>  
-
-    
-        </div>
-    </div> 
-
-<div id="ui7" class="subpage">
-        <div>
-          <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bui">UI ></a></li>
-             <li class="subtitle"><p class="title">"Try It On" App</p></li>
-           </ul>
-    
-    
-            <section>
-                <img src="_images/mobile/A_0001_tryiton.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <article class="notes">"Try It On" App<br>
-              Instructor: Greiman, April&Slote, Bob<br>
-              ” Try It On ” – Inspired by ” Purikura ”<br>
-              In Japan, ” Purikura ” is the moniker of a special type of photo booths that produce photo stickers. Still maintaining huge popularity for girls in Japan, it has spread throughout Australia and East Asia to Taiwan,South Korea, Hong Kong, Philippines, China, Vietnam, and Thailand. To have fun with this contraption , girls get together and take a funny expression photo in the photo sticker machine, then they add some funny graphics around the images by the machines or hand drawing. After applying finishing touches, they share pictures to each other as interesting memories.
-              </article>  
-            <section>
-                <img src="_images/mobile/A_0002_tryiton2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/mobile/A_0003_flow.jpg" width="550" height="412" alt="placeholder">
-            </section>
-    
-        </div>
-  </div> 
-  
-<div id="ui8" class="subpage">
-        <div>
-          <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bui">UI ></a></li>
-             <li class="subtitle"><p class="title">Nissan iPad Experience</p></li>
-           </ul>
-    
-    
-           <section>
-                <img src="_images/ui/A_0000_0.jpg" width="550" height="412" alt="placeholder">
-            </section>
-          <article class="notes">
-              This project was mainly focused on how to integrate all Tibco software in to a whole new level in term of business with Nissan. So the challenge was to make entire user story / flows into visual in 2 weeks. First week, we spent most of time on storyboard, and after several round, we precisely captured what the client want and put into the visual. Client was very satisfied. 
-          </article>  
-        
-            <section>
-                <img src="_images/ui/A_0000_1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/ui/A_0001_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/ui/A_0002_3.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/ui/A_0003_4.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/ui/A_0004_5.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <article class="notes">Nissan iPad Experience<br>
-               <section>
-                <img src="_images/ui/B_0000_1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-                <section>
-                <img src="_images/ui/B_0001_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-                <section>
-                <img src="_images/ui/B_0002_3.jpg" width="550" height="412" alt="placeholder">
-            </section>  
-        </div>
-    </div> 
-     
-
-     <div id="ui9" class="subpage">
-        <div>
-          <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bui">UI ></a></li>
-             <li class="subtitle"><p class="title">Macy Management Tool</p></li>
-           </ul>
-    
-    
-            <section>
-                <img src="_images/ui/C_0000_0.jpg" width="550" height="412" alt="placeholder">
-            </section>
-                 <article class="notes">
-             Macy’s POC project was successfully accomplished less in a week. Since the client mainly used in the warehouse and the goal is to fetching the data fast, they need very light and simple UI. So I only used Macy’s red, as my primary branding color choice and made the UI as simple as possible. The front-end developer did excellent job to finish the project in a short amount of time. 
-          </article>  
- 
-            <section>
-                <img src="_images/ui/C_0001_1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/ui/C_0002_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-                <section>
-                <img src="_images/ui/C_0003_3.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             </section>
-                <section>
-                <img src="_images/ui/C_0004_4.jpg" width="550" height="412" alt="placeholder">
-            </section>
-    
-        </div>
-    </div>        
-
-
-     <div id="ui10" class="subpage">
-        <div>
-          <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bui">UI ></a></li>
-             <li class="subtitle"><p class="title">Data cleansing </p></li>
-           </ul>
-            
-            
-              <section>
-                <img src="_images/ui/D_0002_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-          <article class="notes">
-            Clarity – Cloud Edition helps you integrate, profile, standardize, and transform data so it is trustworthy, allowing you to use it with confidence to identify trends and make smart decisions quickly. It is offered as a subscription service to provide the flexibility and scalability of the cloud environment. As the visual designer for the project, I brought the flat design concept to the UI, and successfully work it out. One thing I have learned from the project was I start to think about the efficiency of the design process between UXD IXD and Front-end.
-            
-          </article>  
-             </section>
-                <section>
-                <img src="_images/ui/D_0002_3.jpg" width="550" height="412" alt="placeholder">
-            </section>
-                <section>
-                <img src="_images/ui/D_0003_3.jpg" width="550" height="412" alt="placeholder">
-            </section>
-               <section>
-                <img src="_images/ui/D_0004_4.jpg" width="550" height="412" alt="placeholder">
-            </section>
-               <section>
-                <img src="_images/ui/D_0005_5.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/ui/D_0000_0.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/ui/D_0001_1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-          
-            <p class="title subtitle">Clarity on AWS</p>
-            <section>
-                <img src="_images/ui/F_0001_1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/ui/F_0002_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-                <section>
-                <img src="_images/ui/F_0003_3.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-    
-        </div>
-    </div>        
-        
-        
-
-<!-- -- end of UI! ------------------------------------------->
-
-
-
-
-
-
-
-
-
-
-
-<!-- starting of WEB ! ---------------------------------------->
-<div id="web1" class="subpage">
-        <div>
-
-            <ul class="breadcrumb">
-            	<li><a class="bread" href="index.html">Home ></a></li>
-           		<li><a href="#" class="bread sublink" bind="bweb">Web></a></li>
-           		<li class="subtitle"><p class="title">W&U Design Studio</p></li>
-            </ul>
-           
-             <section>
-                <img src="_images/web/A_0001_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-            <section>
-                <img src="_images/web/A_0000_1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <article class="notes">
-                  W&U Design Studio<br>
-            Software: Illustrator<br>
-                  The project was designed for the personal design studio " W&U".The goal was to provide a quick and easy process of shopping on the site.</article>  
-    
-        </div>
-    </div> 
-
-
-<div id="web2" class="subpage">
-        <div>
-
-            <ul class="breadcrumb">
-              <li><a class="bread" href="index.html">Home ></a></li>
-              <li><a href="#" class="bread sublink" bind="bweb">Web></a></li>
-              <li class="subtitle"><p class="title">Activespace</p></li>
-            </ul>
-           
-            <section>
-                <img src="_images/web/AS_landing.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-    
-            <section>
-                <img src="_images/web/AS_structure.jpg" width="550" height="412" alt="placeholder">
-            </section>
-               <article class="notes"style="text-align:center">
-             Activespace:
-             <a class="infolink" title="" href="http://activespaces.tibco.com/">activespaces.tibco.com</a><br>
-             A high-performance, distributed, persistent, and event-enabled data-grid
-           </article>
-    
-        </div>
-    </div> 
-
-
-
-
-<div id="web3" class="subpage">
-        <div>
-       
-          <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bweb">Web ></a></li>
-           <li class="subtitle"><p class="title">Cloud Bus Web Design</p></li>
-          </ul>
-    
-    
-            <section>
-                <img src="_images/web/E_0003_3.jpg" width="550" height="412" alt="placeholder">
-            </section>
-     
-            <article class="notes">Cloud Bus Web Design<br>
-                Cloud Bus empowers you to define your own integrations—or use existing integrations—then deploy them in the cloud or on-premises. With Cloud Bus extended connectivity, you can integrate SaaS applications, social networks, and your on-premises applications in real-time. To shorten time-to-value, Cloud Bus offers ready-to-use integration packs that connect customer and order information for popular applications like Salesforce.com, SAP, and tibbr. And because it’s a service deployed in the cloud, Cloud Bus delivers full value without a complex infrastructure.
-              </article> 
-
-  
-    
-        </div>
-    </div> 
-
-
-    <div id="web6" class="subpage">
-        <div>
-    
-         <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bweb">Web ></a></li>
-          <li class="subtitle"><p class="title">Yingkuui kids fashion(Responsive)</p></li>
-         </ul>
-
-           
-            <section>
-                <img src="_images/web/B_0007_8.jpg" width="550" height="412" alt="placeholder">
-            </section>
-                <article class="notes">Yingkuui kids fashion<br>
-            Software: Coda ( HTML5, CSS3, Media Queries )<br>
-            Instructor: Greiman April; Slote Bob<br>
-
-            The website is responsive, it can be viewed through different mobile devices and desktop browsers. This is the iPad Version of the site.<br>
-            <br>
-            To young moms, their biggest dream is to ensure a good life quality for their children. YINGKUUI realizes their dreams by providing the best quality clothes. Besides, the website is quite responsive for it can be easily accessed through any desktop browsers and mobile devices, such as iPhone and iPad, which means young moms can easily get the product information at any time and any places whenever they want.<br>
-            <br>
-
-
-             <a class="infolink" title="" href="http://www.gao-qi.com/_images/Thesis_QiGao.pdf">Download Design Process Book Here</a><br>
-
-                
-
-            </article> 
-            <section>
-                <img src="_images/web/B_0008_9.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-              <section>
-                <img src="_images/web/B_0010_11.jpg" width="550" height="412" alt="placeholder">
-            </section>
-                <img src="_images/web/B_0009_10.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            
-            <section>
-                <img src="_images/interaction/A_0001_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/interaction/A_0002_3.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-               <img src="_images/interaction/A_0003_4.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/interaction/A_0004_6.jpg" width="550" height="412" alt="placeholder">
-            </section>
-    
-             <section>
-                <img src="_images/interaction/A_0005_7.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/interaction/A_0006_8.jpg" width="550" height="412" alt="placeholder">
-            </section>
-    
-            <section>
-                <img src="_images/interaction/A_0009_11.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-                <img src="_images/interaction/A_0010_12.jpg" width="550" height="412" alt="placeholder">
-            </section>
-    
-        </div>
-    </div>       
-        
-
-<div id="web7" class="subpage">
-        <div>
-
-            <ul class="breadcrumb">
-              <li><a class="bread" href="index.html">Home ></a></li>
-              <li><a href="#" class="bread sublink" bind="bweb">Web></a></li>
-              <li class="subtitle"><p class="title">Clarity Landing Page</p></li>
-            </ul>
-         
-            <section>
-                <img src="_images/web/landing7.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-        </div>
-
-        <section>
-                <img src="_images/web/Pricing.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-            <section>
-                <img src="_images/web/F_0009_10.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <article class="notes" style="text-align:center">
-
-            Clarity landing page: 
-             <a class="infolink" title="" href="https://clarity.cloud.tibco.com/landing/index.html">  clarity.cloud.tibco.com</a><br>
-
-           </article>  
-    </div> 
-
-<!-- End of WEB ! ---------------------------------------->
-
-
-<!-- starting of GRAPHICS ! ---------------------------------------->
- <div id="graphic1" class="subpage">
-        <div>
-        
-     
-        
-         <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bgraphic">Graphic Design ></a></li>
-          <li class="subtitle"><p class="title">Posters for "Wanted and Unwanted"</p></li>
-          </ul>
-    
-    
-            <section>
-                <img src="_images/graphic/A_0000_w&u poster.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <article class="notes">
-            Posters for "Wanted and Unwanted".<br>
-            Software:Illustrator Photoshop<br>
-            Some Posters I did for the personal brand called “Wanted & Unwanted”.“wanted and unwanted”emerges from the conception of “Going too far is as bad as not going far enough” from the Buddhism, neither too much nor too little is suitable.“Having done too little or too much” is the reason why so many things are done imperfectly. We should think about how we can well adjust the relationship between too little and too much.It illustrates that it is very important for us to get the so-called “degree”, and also, control is of great significance.And moreover, we should treasure what we have right now and always remember what we should do.</article>
-            <section>
-                <img src="_images/graphic/A_0001_w&u poster2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-               <img src="_images/graphic/A_0003_lee.jpg" width="550" height="412" alt="placeholder">
-            </section>
-    
-            <section>
-               <img src="_images/graphic/A_0002_olympic.jpg" width="550" height="412" alt="placeholder">
-            </section>
-          
-        </div>
-    </div> <!-- end of graphic1 GRAPHIC-->
-
-
-
-
- <div id="graphic2" class="subpage">
-        <div>  
-        	<ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bgraphic">Graphic Design ></a></li>
-           <li class="subtitle"><p class="title"> Pins Design.</p></li>
-           </ul>
-    
-    
-            <section>
-                <img src="_images/graphic/B_0003_w&u banner.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <article class="notes">Header and Banner Design for W&U personal brand.<br> 
-              Software: Photoshop Illustrator<br>
-              The project includes many aspects of design. The major part was design a long banner which includes all the funny cartoonish characters. So I start from sketch by designing the characters first, and then put them all into the banner. All the characters are designed into Pins, some of them are designed into T-shirts. The banner also used as the header of the W&U website.
-              </article>
-            <section>
-                <img src="_images/graphic/B_0001_12 animals.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-               <img src="_images/graphic/B_0000_afu.jpg" width="550" height="412" alt="placeholder">
-            </section>
-    
-            <section>
-               <img src="_images/graphic/B_0002_pins.jpg" width="550" height="412" alt="placeholder">
-            </section>
-          
-        </div>
-    </div> <!-- end of graphic2 GRAPHIC-->
-    
-    
-    
- <div id="graphic3" class="subpage">
-        <div>
-        	<ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bgraphic">Graphic Design ></a></li>
-          <li class="subtitle"><p class="title">Notebook Cover Theme Design.</p></li>
-           </ul>
-    
-    
-            <section>
-                <img src="_images/graphic/C_0000_1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-            <section>
-                <img src="_images/graphic/C_0001_1.1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-               <img src="_images/graphic/C_0004_4.jpg" width="550" height="412" alt="placeholder">
-            </section>
-    
-            <section>
-               <img src="_images/graphic/C_0002_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-             <section>
-               <img src="_images/graphic/C_0003_3.jpg" width="550" height="412" alt="placeholder">
-            </section>
-          
-          
-        </div>
-    </div> <!-- end of graphic3 GRAPHIC-->    
- 
-    
-  <div id="graphic4" class="subpage">
-        <div>
-        	<ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bgraphic">Graphic Design ></a></li>
-           <li class="subtitle"><p class="title">Logo Design Collection</p></li>
-           </ul>
-    
-    
-            <section>
-                <img src="_images/graphic/D_0001_calalist.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-            <section>
-                <img src="_images/graphic/D_0000_yingkuui.jpg" width="550" height="412" alt="placeholder">
-            </section>
-         <section>
-               <img src="_images/graphic/D_0002_yuehu.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-          
-        </div>
-    </div> 
-    
-
-
-      <div id="graphic6" class="subpage">
-        <div>
-          <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bgraphic">Graphic Design ></a></li>
-           <li class="subtitle"><p class="title">Icons Redesign for Machine Data</p></li>
-           </ul>
-    
-    
-            <section>
-                <img src="_images/graphic/E_0001_1.png" width="550" height="412" alt="placeholder">
-            </section>
-
-            <section>
-                <img src="_images/graphic/E_0002_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-
-          
-        </div>
-    </div> 
-    
-          
-<!-- -- end of GRAPHICS! ------------------------------------------->
-
-
-
-
-<!-- starting of MOTIONGRAPHICS ! ---------------------------------------->
- <div id="motion1" class="subpage">
-        <div>
-        
-       
-        	<ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bmotion">Motion ></a></li>
-            <li class="subtitle"><p class="title">Storyboard - Starbucks Coffee.</p></li>
-           </ul>
-    
-    
-            <section>
-                <img src="_images/motion/A_0000_1.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <article class="notes">
-              Software: Photoshop<br>
-              Instructor: Colin Sebestyen<br>
-              The Motion Storyboard for Starbucks, instructor wanted us to create 4 frames storyboards in order to show the basic sequences of the motion.</article> 
-                          
-            <section>
-                <img src="_images/motion/A_0001_2.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-             <section>
-                <img src="_images/motion/A_0002_3.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-             <section>
-                <img src="_images/motion/A_0003_4.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-    
-        </div>
-    </div> 
-    
-    
-  <div id="motion2" class="subpage">
-        <div>  
-        	<ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bmotion">Motion ></a></li>
-          <li class="subtitle"><p class="title">Nike – Station ID</p></li>
-           </ul>
-    			
-          <section>   
-                <iframe src="http://player.vimeo.com/video/42322999"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>
-     	    </section>
-            
-            <article class="notes">Nike – Station ID<br>
-            Software: After Effects, C4D <br>
-            Instructor: Carl Nolting<br>
-            The station ID I made for NIKE CHINA. The goal is to promote the brand identity for the target audience in China, by using visual elements inspired by Chinese traditional art. This project includes 3 short pieces for Tennis, Football ( Soccer ) and Basketball respectively, each of which is 10 seconds long.</article> 
-            <section>
-                <img src="_images/motion/B_0000_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/motion/B_0001_3.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-             <section>
-                <img src="_images/motion/B_0002_4.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-             <section>
-                <img src="_images/motion/B_0003_5.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-              <section>
-                <img src="_images/motion/B_0004_6.jpg" width="550" height="412" alt="placeholder">
-            </section>
-                   <section>
-                <img src="_images/motion/B_0005_7.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-    
-        </div>
-    </div>    
-    
-    
- <div id="motion3" class="subpage">
-        <div>
-           
-           <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bmotion">Motion ></a></li>
-            <li class="subtitle"><p class="title">A Short Documentary for Yao Ming.</p></li>
-           </ul>
-    			
-          <section>   
-           <iframe src="http://player.vimeo.com/video/22786546" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-     	</section>
-            
-            <article class="notes">
-                Software: After Effect, Photoshop<br>
-                Instructor: Colin, Sebestyen<br>
-                The motion piece tells the story of Yao Ming who has overcome numerous obstacles, both on and off the court, to play basketball from the good to the great. A tribute to Yao’s NBA journey.</article> 
-            <section>
-                <img src="_images/motion/B_0014_16.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/motion/B_0015_17.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-             
-    
-        </div>
-    </div>       
-    
-    
- <div id="motion4" class="subpage">
-        <div>     
-        	 <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bmotion">Motion ></a></li>
-           <li class="subtitle"><p class="title">Dreamland</p></li>
-           </ul>
-    			
-          <section>   
-           <iframe src="http://player.vimeo.com/video/42086886" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-     	</section>
-            
-            <article class="notes">Dreamland<br>
-              Software: C4D, After Effect, Illustrator, Logic Pro<br>
-              Instructor: Justin Metros<br>
-              The motion piece is for the kids fashion website called ” Yingkuui “, and for the page of ” Dreamland “.
-              The ” Dreamland ” is the place that educates kids what dreams are made of and helps them to express their own dreams. The goal of this feature is to find out what the kids truly want, what they genuinely like, in order to make sure YINKGUUI having a positive interaction with kids.
-
-
-
-            </article> 
-            <section>
-                <img src="_images/motion/B_0006_8.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/motion/B_0007_9.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-            <section>
-                <img src="_images/motion/B_0008_10.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/motion/B_0009_11.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-             
-    
-        </div>
-    </div>     
-
-
-
-<div id="motion5" class="subpage">
-        <div>
-        
-        	 <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bmotion">Motion ></a></li>
-            <li class="subtitle"><p class="title">Title Sequence - The Battle of Red Cliff</p></li>
-           </ul>
-    			
-          <section>   
-           <iframe src="http://player.vimeo.com/video/21945441" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p>
-     	</section>
-            
-            <article class="notes">Title Sequence - The Battle of Red Cliff<br>
-                            Software: After Effects, Photoshop<br>
-                Instructor: Carl Nolting<br>
-                The title sequence is created for the movie ” Red Cliff “, which is directed by John Woo. The goal is trying to reveal the bloodiness of the major battle which happened at Red Cliff 2000 years in China, by using the 2D illustration style with red and black color.</article> 
-            <section>
-                <img src="_images/motion/C_0016_18.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/motion/C_0017_19.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-            <section>
-                <img src="_images/motion/C_0018_20.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/motion/C_0019_21.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-             <section>
-                <img src="_images/motion/C_0020_22.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-             
-    
-        </div>
- </div>     
-
-
-<div id="motion6" class="subpage">
-        <div>
-        
-
-        <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bmotion">Motion ></a></li>
-          <li class="subtitle"><p class="title">Title Sequence – Pure</p></li>
-           </ul>
-    			
-          <section>   
-           <iframe src="http://player.vimeo.com/video/17837768" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-     	</section>
-            
-            <article class="notes">
-                Title Sequence – Pure<br>
-                Instructor: Colin, Sebestyen<br>
-                Software: After Effect ( Trapcode Particular )<br>
-                This motion piece was inspired by the musician, Yan Tiersen, who did the song called ” Pure “.</article> 
-            <section>
-                <img src="_images/motion/B_0010_12.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/motion/B_0011_13.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-            <section>
-                <img src="_images/motion/B_0012_14.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/motion/B_0013_15.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-             
-    
-        </div>
- </div>  
-
-
-   
-<!-- -- end of MOTIONGRAPHICS! ------------------------------------------->
-
-
-
-
-
-
-<!-- starting of INFOGRAPHICS ! ---------------------------------------->
-
-
-
-  <div id="info1" class="subpage">
-        <div>
- 
-        
-        <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="binfo">Infographics ></a></li>
-           <li class="subtitle"><p class="title">Who has the most followers?</p></li>
-           </ul>
-    
-    
-            <section>
-                <img src="_images/info/A_0000_2.jpg" width="550" height="412" alt="placeholder">
-            </section>
-            <article class="notes">Who has the most followers?<br>
-              Software: Flash ( Actionscript with Greensock plugin )<br>
-              The project is a comparison between 2 micro-blogging sites, Twitter and Sina Weibo. The goal is to let more people know about those famous persons from US and China. In this project, I compared Top 30 famous people from each site, according to the number of followers. User can click people’s name to get more personal information.<br>
-              ( The database was around 12/2011 from those 2 micro-blogging sites.)<br>
-            <br>
-            <a class="infolink" title="Who got the most followers" href="http://www.gao-qi.com/infoFinal/">Link to Project: www.yingkuui.com/infoFinal</a>
+                As the UI designer for this project, I have been working closely with IXD to accomplish a great solution for this project. We also set up a good working relationship and process with product team in order to achieve better efficiencies. The visual pattern is the key to make everything goes smoothly and benefits the entire team.
             </article>
             <section>
-                <img src="_images/info/A_0001_3.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-              <section>
-                <img src="_images/info/A_0002_4.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-               <section>
-                <img src="_images/info/A_0003_5.jpg" width="550" height="412" alt="placeholder">
-            </section> 
-    
-        </div>
-    </div> 
-
-  <div id="info2" class="subpage">
-        <div>
-         <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="binfo">Infographics ></a></li>
-           <li class="subtitle"><p class="title">UX Pattern Library Process</p></li>
-           </ul>
-    
-    
+                <img src="images/ui/E_009_21.jpg" alt="placeholder">
+                <img src="images/ui/E_009_24.jpg" alt="placeholder">
+                <article class="notes">
+                    The design of 1.0 was done with a very tight deadline. The goal is about feature completion and refreshing the UI. So at beginning, form PM to design team spent more time on the work flow and the visual design, I tried to make things as organized as possible.
+                    <br>
+                </article>
+                <img src="images/ui/E_009_27.jpg" alt="placeholder">
+                <img src="images/ui/E_003_3.jpg" alt="placeholder">
+                <img src="images/ui/E_004_4.jpg" alt="placeholder">
+                <img src="images/ui/E_005_5.jpg" alt="placeholder">
+                <img src="images/ui/E_009_25.jpg" alt="placeholder">
+            </section>
+            <p class="subtitle title">2.0 design</p>
+            <article class="notes">
+                There are 2 main problems we are trying to solve from user's feedback: 1. Spacing and minor interaction(Ease of use). 2.Interaction consistency. Since it is the key piece of Operational group, I need to make sure all proudcts look consistent.In design 2.0, I worked closely with PM to figure out the branding color for the product. I also worked on the interaction for source configuration and search feature. Worked closely with lead engineer and PM to get requirements then design the wireframe.</article>
             <section>
-                <img src="_images/info/A_0004_6.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/E_009_32.jpg" alt="placeholder">
+                <img src="images/ui/E_009_22.jpg" alt="placeholder">
+                <img src="images/ui/E_009_23.jpg" alt="placeholder">
+                <img src="images/ui/E_009_29.jpg" alt="placeholder">
+                <img src="images/ui/E_009_30.jpg" alt="placeholder">
             </section>
-              <section>
-                <img src="_images/info/A_0005_7.jpg" width="550" height="412" alt="placeholder">
+            <p class="subtitle title">Interaction redesign</p>
+            <section>
+                <img src="images/ui/E_009_17.jpg" alt="placeholder">
+                <img src="images/ui/E_009_31.jpg" alt="placeholder">
+                <img src="images/ui/E_009_16.jpg" alt="placeholder">
             </section>
-
-          
-    
+            <p class="subtitle title">Visual redesign</p>
+            <section>
+                <img src="images/ui/E_009_10.jpg" alt="placeholder">
+                <img src="images/ui/E_009_13.jpg" alt="placeholder">
+                <img src="images/ui/E_009_14.jpg" alt="placeholder">
+                <img src="images/ui/E_009_15.jpg" alt="placeholder">
+            </section>
+            <p class="subtitle title">UI pattern</p>
+            <article class="notes">
+                Although the design has been changed quite a lot, but I still documenting the UI patterns through out the process, such as table style, dropdown, checkbox, etc. So the compoments still stays the same thing while its updating. It saves a lot of time for the current and future re-design process.</article>
+            <section>
+                <img src="images/ui/E_001_1.jpg" alt="placeholder">
+            </section>
         </div>
-    </div> 
- 
-
-
-
-
-<!-- -- end of INFOGRAPHICS! ------------------------------------------->
-
-
-
-
-
-
-
-
-
-
-<!-- starting of imaging! ------------------------------------------>
+    </div>
+    <div id="ui12" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Salesforce object design</p>
+                <article class="notesbig">
+                    The project is to build a object on both web and mobile for Salesforce, the goal is to create an acurrate pattern search with typeahead, configuration functions.
+                </article>
+            </div>
+            <section>
+                <img src="images/ui/E_0010_1.jpg" width="550" height="412" alt="placeholder">
+                <article class="notes">
+                    I worked with product team to provide an end to end design solution from interaction to visual design. I have weekly sync-up meeting with the product team and presneted the design which closely attached with the project goal. On the mobile part, I need to communicate with mobile developer to get insight about the Salesforce mobile design knowledge to evaluate whether the design is implementable.
+                </article>
+                <img src="images/ui/E_0010_2.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/E_0010_3.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/E_0010_4.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/E_0010_5.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/E_0010_6.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/E_0010_7.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/E_0010_8.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/E_0010_9.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="ui1" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Office 365 purchase flow</p>
+                <article class="notesbig">
+                    The project is to redesign the purchase flow for office 365 on AT&T Business users. The goal is simplify the work flow and help user customize their plans.
+                </article>
+            </div>
+            <section>
+                <img src="images/web/B_0001_2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+                I worked closely with VP Product on the interaction part to make sure the design is clear enough before the visual. I designed the wizzard the flow to guide users where they are. Overall, the flow gives users a clean and simple purchase user experience and provides the right information at right time.
+            </article>
+            <section>
+                <img src="images/web/B_0000_1.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/web/B_0000_2.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/web/B_0000_3.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/web/B_0000_4.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/web/B_0000_5.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/web/B_0000_6.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/web/B_0000_7.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="ui4" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Desktop application</p>
+                <article class="notesbig">
+                    The project is a PC desktop application for user to launch web apps with "single sign on" feature. Help user organize and manage their favorite apps.
+                </article>
+            </div>
+            <section>
+                <img src="images/web/C_0000_1.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">Desktop Application for Web Apps
+                <br> The product name is Catalist which is a play word from "Catalyst" . The landing page basically reflects the concept "Catalyst" with the inking background, the goal is to let user engage with consumer and AppDirect apps together as a tool for daily use, mainly for PC business users. </br>
+                I worked closely with VP product from interaction to visual design. Worked with creative director to come up the branding. Worked with front-end developer for the impelemetation.
+            </article>
+            <section>
+                <img src="images/ui/G_0000_2.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_7.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_8.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_9.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_10.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_11.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_12.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_13.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_14.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_15.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_3.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_4.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/G_0000_5.jpg" width="550" height="412" alt="placeholder">
+                <p class="subtitle title">Final outcome</p>
+                <img src="images/ui/G_0000_6.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="ui5" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Product infographics</p>
+                <article class="notesbig">
+                    The infographic design is for TIBCO marketing team to demo the product stragetgy, the idea is to show the eco-system of all products.
+                </article>
+            </div>
+            <section>
+                <img src="images/info/A_0006_8.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+                I got requirements from marketing director and worked with art director to come up with the "Subway" concept. The end result is pretty successful to demo the 3groups of TIBCO products in a simple infographics.
+            </article>
+            </article>
+            <section>
+                <img src="images/info/A_0007_9.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="ui6" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Fashion app redesign</p>
+                <article class="notesbig">
+                    The project is redesign the branding of the Fashion iPhone app. The app provides a social platform for fashion designers or followers.
+                </article>
+            </div>
+            <section>
+                <img src="images/mobile/A_0000_flashable2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+                I worked with the 2 co-founders for this app to figure out the branding and 3 levels of content interaction screens.
+            </article>
+        </div>
+    </div>
+    <div id="ui7" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">"Try It On" App</p>
+                <article class="notesbig">
+                    This project is for parents who want to try on clothes for kids before they physically going to shopping in store.
+                </article>
+            </div>
+            <section>
+                <img src="images/mobile/A_0001_tryiton.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">"Try It On" App
+                <br> Instructor: Greiman, April&Slote, Bob
+                <br> ” Try It On ” – Inspired by ” Purikura ”
+                <br> In Japan, ” Purikura ” is the moniker of a special type of photo booths that produce photo stickers. Still maintaining huge popularity for girls in Japan, it has spread throughout Australia and East Asia to Taiwan,South Korea, Hong Kong, Philippines, China, Vietnam, and Thailand. To have fun with this contraption , girls get together and take a funny expression photo in the photo sticker machine, then they add some funny graphics around the images by the machines or hand drawing. After applying finishing touches, they share pictures to each other as interesting memories.
+                <br> I was the UX/UI designer for theis project, I spent hours to gather feedbacks from the target audience to make sure this concept is implementable, so I did serveral rounds of user interview, 90% of user are really interested about this app. The deisgn was shown as a clickable prototype, after several rounds of user testings, the final design was exactly finished with user's expectation.
+            </article>
+            <section>
+                <img src="images/mobile/A_0002_tryiton2.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/mobile/A_0004.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/mobile/A_0003_flow.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/mobile/A_0005.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/mobile/A_0006.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/mobile/A_0007.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="ui8" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Nissan iPad experience</p>
+                <article class="notesbig">
+                    This project was focused on integrating analytics softwares into building the business relationship with Nissan Infiniti.
+                </article>
+            </div>
+            <section>
+                <img src="images/ui/A_0000_0.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+                There are 2 major use cases, consumer and sales. I worked closely with director to get the entire story and came up with the storyboard/walkthrough. </br>
+                The challenge was to make entire user story / flows into visual in 2 weeks. First week, we spent most of time on storyboard, and after several round, we precisely captured what the client want and put into the visual. Client was very satisfied.
+            </article>
+            <section>
+                <img src="images/ui/B_0000_1.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/B_0001_2.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/B_0002_3.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/A_0000_1.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/A_0001_2.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/A_0002_3.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/A_0003_4.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/A_0004_5.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="ui9" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Macy management tool</p>
+                <article class="notesbig">
+                    Macy’s project is to build an iPad app to use in their warehouse management for monitoring inventory status on daily basis.
+                </article>
+            </div>
+            <section>
+                <img src="images/ui/C_0000_0.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+                The client need simple UI to fetch the data fast. I drew some sketches/walkthrough to get approve from client and started with the visual directly. It was completed in a week.
+            </article>
+            <section>
+                <img src="images/ui/C_0001_1.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/ui/C_0002_2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/ui/C_0003_3.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            </section>
+            <section>
+                <img src="images/ui/C_0004_4.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="ui10" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Data cleansing tool</p>
+                <article class="notesbig">
+                    Clarity Cloud Edition helps you integrate, profile, standardize, and transform data so it is trustworthy, allowing you to use it with confidence to identify trends and make smart decisions quickly.
+                </article>
+            </div>
+            <section>
+                <img src="images/ui/D_0002_2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+                It is offered as a subscription service to provide the flexibility and scalability of the cloud environment. </br>
+                As the visual designer for the project, I brought the flat design concept to the UI, and it successfully work out.
+            </article>
+            </section>
+            <section>
+                <img src="images/ui/D_0002_3.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/D_0003_3.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/D_0004_4.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/D_0005_5.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/D_0000_0.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/D_0001_1.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <p class="title subtitle">Clarity on AWS</p>
+            <section>
+                <img src="images/ui/F_0001_1.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/F_0002_2.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/ui/F_0003_3.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <p class="title subtitle ">Clarity icon set</p>
+            <section>
+                <img src="images/ui/F_0003_4.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <!-- -- end of UI! ------------------------------------------->
+    <!-- starting of WEB ! ---------------------------------------->
+    <div id="web1" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">W&U design studio</p>
+                <article class="notesbig">
+                    “wanted and unwanted” Studio concept emerges from the conception of “Going too far is as bad as not going far enough” from the Buddhism.
+                </article>
+            </div>
+            <section>
+                <img src="images/web/A_0001_2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/web/A_0000_1.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+                “Wanted and unwanted”emerges from the conception of “Going too far is as bad as not going far enough” from the Buddhism, neither too much nor too little is suitable.“Having done too little or too much” is the reason why so many things are done imperfectly. We should think about how we can well adjust the relationship between too little and too much.It illustrates that it is very important for us to get the so-called “degree”, and also, control is of great significance.And moreover, we should treasure what we have right now and always remember what we should do.</article>
+            <section>
+                <img src="images/graphic/A_0000_w&u poster.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/graphic/A_0001_w&u poster2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/A_0003_lee.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/A_0002_olympic.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="web2" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Activespace landing page</p>
+                <article class="notesbig">
+                    To lift the burden of big data, TIBCO ActiveSpaces provides a distributed in-memory data grid that can increase processing speed so you can reduce reliance on costly transactional system.
+                </article>
+            </div>
+            <section>
+                <img src="images/web/AS_landing.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/web/AS_structure.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes" style="text-align:center">
+                Activespace:
+                <a class="infolink" title="" href="http://activespaces.tibco.com/">activespaces.tibco.com</a>
+                <br> A high-performance, distributed, persistent, and event-enabled data-grid
+            </article>
+        </div>
+    </div>
+    <div id="web3" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Cloud Bus web design</p>
+                <article class="notesbig">
+                    Cloud Bus empowers you to define your own integrations—or use existing integrations—then deploy them in the cloud or on-premises. With Cloud Bus extended connectivity, you can integrate SaaS applications, social networks, and your on-premises applications in real-time.
+                </article>
+            </div>
+            <section>
+                <img src="images/web/E_0003_3.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notesbig">
+                To shorten time-to-value, Cloud Bus offers ready-to-use integration packs that connect customer and order information for popular applications like Salesforce.com, SAP, and tibbr. And because it’s a service deployed in the cloud, Cloud Bus delivers full value without a complex infrastructure.
+            </article>
+        </div>
+    </div>
+    <div id="web6" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Yingkuui kids fashion</p>
+                <article class="notesbig">
+                    For moms, their biggest dream is to ensure a good life quality for their children. YINGKUUI realizes their dreams by providing the best quality clothes.
+                </article>
+            </div>
+            <section>
+                <img src="images/web/B_0007_8.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+                The website is responsive. I was the UX/UI designer for designing the website. The challenge was to make sure the site content can be view at crossing platform, I made several rounds of wireframe and paper prototype testing beofore starting on the visual. I spent some time to research the media query to make the site is responsive. I also spent hours to concern the content layout in different screen sizes, so it always providing the good info for users.
+                <br>
+                <br> The website is quite responsive for it can be easily accessed through any desktop browsers and mobile devices, such as iPhone and iPad, which means young moms can easily get the product information at any time and any places whenever they want.
+                <br>
+                <br>
+            </article>
+            <section>
+                <img src="images/interaction/A_0000_14.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_15.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_16.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_17.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_3.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_4.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_5.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_6.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_7.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_8.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_9.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_10.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_11.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/interaction/A_0000_12.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/web/B_0008_9.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/web/B_0010_11.jpg" width="550" height="412" alt="placeholder">
+                <img src="images/web/B_0009_10.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="web7" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Clarity landing page
+                    <article class="notesbig">
+                        The landing page is build for the product Clarity by showing the way of parllax scrolling. The goal is to demo the workflow for user since it is brand new product.
+                    </article>
+                </p>
+            </div>
+            <section>
+                <img src="images/web/landing7.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+        <section>
+            <img src="images/web/Pricing.jpg" width="550" height="412" alt="placeholder">
+        </section>
+        <article class="notes" style="text-align:center">
+            Clarity landing page:
+            <a class="infolink" title="" href="https://clarity.cloud.tibco.com/landing/index.html">  clarity.cloud.tibco.com</a>
+            <br>
+        </article>
+    </div>
+    <!-- End of WEB ! ---------------------------------------->
+    <!-- starting of GRAPHICS ! ---------------------------------------->
+    <!--  <div id="graphic1" class="subpage">
+        <div>
+        
+     
+        
+       
+          <div class="subtitle">
+            <p class="title">Posters "Wanted and Unwanted"</p>
+             <article class="notesbig">
+                The landing page is build for the product Clarity by showing the way of parllax scrolling. 
+                 </article> 
+           </div>
+     
+          
+        </div>
+    </div> -->
+    <!-- end of graphic1 GRAPHIC-->
+    <div id="graphic2" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title"> Pin design</p>
+                <article class="notesbig">
+                    Pin design for "W&U" Studio. I deisgned the 12 animal cartoon characters along with other types of characters, then printed them on the pins and sold them at designer marketplace.
+                </article>
+            </div>
+            <section>
+                <img src="images/graphic/B_0003_w&u banner.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+                The major part was design a long banner which includes all the funny cartoonish characters. So I start from sketch by designing the characters first, and then put them all into the banner. All the characters are designed into Pins, some of them are designed into T-shirts. The banner also used as the header of the W&U website.
+            </article>
+            <section>
+                <img src="images/graphic/B_0001_12 animals.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/B_0000_afu.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/B_0002_pins.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <!-- end of graphic2 GRAPHIC-->
+    <div id="graphic3" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Notebook cover design</p>
+                <article class="notesbig">
+                    The project started with one of my illustration and then printed on the notebook covers.
+                </article>
+            </div>
+            <section>
+                <img src="images/graphic/C_0000_1.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/C_0001_1.1.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/C_0004_4.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/C_0002_2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/C_0003_3.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <!-- end of graphic3 GRAPHIC-->
+    <div id="graphic4" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Logo design collection</p>
+                <article class="notesbig">
+                    Logo is the heart of branding, it is the first impression of product.
+                </article>
+            </div>
+            <section>
+                <img src="images/graphic/D_0001_calalist.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/D_0000_yingkuui.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/D_0002_yuehu.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="graphic6" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Machine data icon set</p>
+                <article class="notesbig">
+                    The icon set design for machine data, the redesign provides the color and new life to the boring terminology.
+                </article>
+            </div>
+            <section>
+                <img src="images/graphic/E_0001_1.png" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/graphic/E_0002_2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <!-- -- end of GRAPHICS! ------------------------------------------->
+    <!-- starting of MOTIONGRAPHICS ! ---------------------------------------->
+    <div id="motion1" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Storyboard Starbucks</p>
+                <article class="notesbig">
+                    The Motion Storyboard for Starbucks, I created 4 frames storyboards in order to show the basic sequences of the motion.
+                </article>
+            </div>
+            <section>
+                <img src="images/motion/A_0000_1.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+            </article>
+            <section>
+                <img src="images/motion/A_0001_2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/A_0002_3.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/A_0003_4.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="motion2" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Nike Station ID</p>
+                <article class="notesbig">
+                    The goal is to promote the brand identity for the target audience in China, using visual elements are inspired by Chinese art.
+                </article>
+            </div>
+            <section>
+                <iframe src="http://player.vimeo.com/video/42322999" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </p>
+            </section>
+            <article class="notes">
+                The station ID I made for NIKE CHINA. This project includes 3 short pieces for Tennis, Football ( Soccer ) and Basketball respectively, each of which is 10 seconds long.</article>
+            <section>
+                <img src="images/motion/B_0000_2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0001_3.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0002_4.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0003_5.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0004_6.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0005_7.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="motion3" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Yao Ming</p>
+                <article class="notesbig">
+                    The motion piece tells the story of Yao Ming who has overcome numerous obstacles, both on and off the court, to play basketball from the good to the great. A tribute to Yao’s NBA journey.</article>
+            </div>
+            <section>
+                <iframe src="http://player.vimeo.com/video/22786546" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </section>
+            <article class="notes">
+            </article>
+            <section>
+                <img src="images/motion/B_0014_16.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0015_17.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="motion4" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Dreamland</p>
+                <article class="notesbig">
+                    The ” Dreamland ” is the place that educates kids what dreams are made of and helps them to express their own dreams.
+                </article>
+            </div>
+            <section>
+                <iframe src="http://player.vimeo.com/video/42086886" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </section>
+            <article class="notes">Dreamland
+                <br> The motion piece is for the kids fashion website and for the page of ” Dreamland “. The ” Dreamland ” is the place that educates kids what dreams are made of and helps them to express their own dreams. The goal of this feature is to find out what the kids truly want, what they genuinely like, in order to make sure YINKGUUI having a positive interaction with kids.
+            </article>
+            <section>
+                <img src="images/motion/B_0006_8.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0007_9.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0008_10.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0009_11.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="motion5" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Title Sequence "Red Cliff"</p>
+                <article class="notesbig">
+                    The title sequence is created for the movie ” Red Cliff “, a school work I did in the advacned motion design program.
+                </article>
+            </div>
+            <section>
+                <iframe src="http://player.vimeo.com/video/21945441" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                <p>
+            </section>
+            <article class="notes">
+                The goal is trying to reveal the bloodiness of the major battle which happened at Red Cliff 2000 years in China, by using the 2D illustration style with red and black color.</article>
+            <section>
+                <img src="images/motion/C_0016_18.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/C_0017_19.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/C_0018_20.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/C_0019_21.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/C_0020_22.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="motion6" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Title Sequence "Pure"</p>
+                <article class="notesbig">
+                    This motion piece was inspired by the musician, Yan Tiersen.
+                </article>
+            </div>
+            <section>
+                <iframe src="http://player.vimeo.com/video/17837768" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </section>
+            <article class="notes">
+            </article>
+            <section>
+                <img src="images/motion/B_0010_12.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0011_13.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0012_14.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/motion/B_0013_15.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <!-- -- end of MOTIONGRAPHICS! ------------------------------------------->
+    <!-- starting of INFOGRAPHICS ! ---------------------------------------->
+    <div id="info1" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">Who has the most followers?</p>
+                <article class="notesbig">
+                    The project is a comparison between 2 micro-blogging sites, Twitter and Sina Weibo.
+                </article>
+            </div>
+            <section>
+                <img src="images/info/A_0000_2.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <article class="notes">
+                The project is a comparison between 2 micro-blogging sites, Twitter and Sina Weibo. The goal is to let more people know about top-followed celebrities between US and China. In this project, I compared Top 30 famous people from each site, according to the number of followers. User can click people’s name to get more personal information.
+                <br>
+                <a class="infolink" title="Who got the most followers" href="http://www.gao-qi.com/infoFinal/">Link to Project: www.yingkuui.com/infoFinal</a>
+            </article>
+            <section>
+                <img src="images/info/A_0001_3.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/info/A_0002_4.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/info/A_0003_5.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <div id="info2" class="subpage">
+        <div>
+            <div class="subtitle">
+                <p class="title">UX Strategy</p>
+            </div>
+            <section>
+                <img src="images/info/A_0004_6.jpg" width="550" height="412" alt="placeholder">
+            </section>
+            <section>
+                <img src="images/info/A_0005_7.jpg" width="550" height="412" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <!-- -- end of INFOGRAPHICS! ------------------------------------------->
+    <!-- starting of imaging! ------------------------------------------>
     <div id="Imaging1" class="subpage">
         <div>
-            
-           <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bgraphic">Graphic Design></a></li>
-            <li class="subtitle"><p class="title">She smiles in the rainbow</p></li>
-           </ul>
-    
-            
-            
+            <div class="subtitle">
+                <p class="title">She smiles in the rainbow</p>
+                <article class="notesbig">
+                    The design was inspired by a song, and I tried to visualized it in Photoshop.
+                </article>
+            </div>
             <section>
-                <img src="_images/imaging/A_0000_2.jpg" alt="placeholder">
+                <img src="images/imaging/A_0000_2.jpg" alt="placeholder">
             </section>
-
-        </div >      
-    </div>  
-
+        </div>
+    </div>
     <div id="Imaging2" class="subpage">
         <div>
-          <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bgraphic">Digital Art></a></li>
-           <li class="subtitle"><p class="title">The lost San Francisco</p></li>
-          </ul>
-    
+            <div class="subtitle">
+                <p class="title">The lost San Francisco</p>
+                <article class="notesbig">
+                    The design practice with Michael Brunsfeld for his Digital Imaging program.
+                </article>
+            </div>
             <section>
-                <img src="_images/imaging/A_0001_3.jpg" alt="placeholder">
+                <img src="images/imaging/A_0001_3.jpg" alt="placeholder">
             </section>
-              			<article class="notes">National Geographics – The lost San Francisco<br>
-              Software: Photoshop, Corel Painter 12<br>
-              Instructor: Brunsfeld, Michael<br>
-              The final project for Imaging class. This is a cover design for National Geographic Magazine, and I set the issue date in 2120 which can give a more futuristic flavor. The underlying story is that people who live in the year of 2120 discover the lost San Francisco which has sunk to the bottom of the sea at an unknown time.</article>
+            <article class="notes">
+                This is a cover design for National Geographic Magazine, and I set the issue date in 2120 which can give a more futuristic flavor. The underlying story is that people who live in the year of 2120 discover the lost San Francisco which has sunk to the bottom of the sea at an unknown time.</article>
             <section>
-                <img src="_images/imaging/A_0003_5.jpg" alt="placeholder">
+                <img src="images/imaging/A_0003_5.jpg" alt="placeholder">
             </section>
             <section>
-                <img src="_images/imaging/A_0002_4.jpg" alt="placeholder">
+                <img src="images/imaging/A_0002_4.jpg" alt="placeholder">
             </section>
-          
-
-        </div >      
-    </div>  
-
-
+        </div>
+    </div>
     <div id="Imaging4" class="subpage">
         <div>
-             <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bgraphic">Graphic Design></a></li>
-           <li class="subtitle"><p class="title">My Life, My Dream</p></li>
-           </ul>
-    
+            <div class="subtitle">
+                <p class="title">My Life, My Dream</p>
+                <article class="notesbig">
+                    The banner design for the kids fashion company, their slogan is ” My Life, My Dream “.
+                </article>
+            </div>
             <section>
-                <img src="_images/imaging/A_0006_8.jpg" alt="placeholder">
+                <img src="images/imaging/A_0006_8.jpg" alt="placeholder">
             </section>
-			       <article class="notes">My Life, My Dream<br>
-        Software: Photoshop<br>
-        The 2 images are made for the kids fashion company when they held the fashion show called ” My Life, My Dream “.</article>
-                    <section>
-                <img src="_images/imaging/A_0007_9.jpg" alt="placeholder">
-            </section>
-
-
-              <section>
-                <img src="_images/imaging/A_0004_7.jpg" alt="placeholder">
-            </section>
-                <article class="notes">2 Dreams<br>
-          Software: Photoshop<br>
-          Instructor: Michael Brunsfeld<br>
-          Class assignment. For fun. The goal of this image is to experiment with the power of channels in the Photoshop. I manipulated the channels of the original landscape view to create a beautiful illusion.</article>
+            <article class="notes">
+            </article>
             <section>
-                <img src="_images/imaging/A_0005_7.1.jpg" alt="placeholder">
+                <img src="images/imaging/A_0007_9.jpg" alt="placeholder">
             </section>
-        </div >      
-    </div>  <!-- end of subpage5  IMAGING -->  
-
-
+            <div class="subtitle">
+                <p class="title">2 Dreams</p>
+                <article class="notesbig">
+                    The goal of this imaging work is to experiment with the power of channels in the Photoshop. I manipulated the channels of the original landscape view to create a beautiful illusion.
+                </article>
+            </div>
+            <section>
+                <img src="images/imaging/A_0004_7.jpg" alt="placeholder">
+                <img src="images/imaging/A_0005_7.1.jpg" alt="placeholder">
+            </section>
+        </div>
+    </div>
+    <!-- end of subpage5  IMAGING -->
     <div id="Imaging5" class="subpage">
         <div>
-            <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bgraphic">Graphic Design></a></li>
-          <li class="subtitle"><p class="title">Tilt-Shift Miniature</p></li>
-           </ul>
-    
+            <div class="subtitle">
+                <p class="title">TiltShift effect</p>
+                <article class="notesbig">
+                    The 3 pieces of photos are the landscape I took at the snow mountain called ” Yu Long ” in China. I used the ” Lens Blur ” in the Photoshop to emulate the tilt-shift miniature.
+                </article>
+            </div>
             <section>
-                <img src="_images/imaging/A_0008_10.jpg" alt="placeholder">
+                <img src="images/imaging/A_0008_10.jpg" alt="placeholder">
+                <img src="images/imaging/A_0009_11.jpg" alt="placeholder">
+                <img src="images/imaging/A_0010_12.jpg" alt="placeholder">
             </section>
-			<article class="notes">Yu Long Snow Mountain – Tilt-Shift Miniature<br>
-Software: Photoshop<br>
-The 3 pieces of photos are the landscape I took at the snow mountain called ” Yu Long ” in China. I used the ” Lens Blur ” in the Photoshop to emulate the tilt-shift miniature.</article>
-            <section>
-                <img src="_images/imaging/A_0009_11.jpg" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/imaging/A_0010_12.jpg" alt="placeholder">
-            </section>
-        </div >      
-    </div>  <!-- end of subpage6 IMAGING-->  
-    
-
-    
-    
-<div id="Imaging6" class="subpage">
+        </div>
+    </div>
+    <!-- end of subpage6 IMAGING-->
+    <div id="Imaging6" class="subpage">
         <div>
-           <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bgraphic">Graphic Design></a></li>
-             <li class="subtitle"><p class="title">Cubic Distort in Tokyo</p></li>
-           </ul>
-    
+            <div class="subtitle">
+                <p class="title">Cubic Distortion(Tokyo)</p>
+                <article class="notesbig">
+                    Experimenting Photoshop with Cinema 4D to create an intriguing digital imaging.
+                </article>
+            </div>
             <section>
-                <img src="_images/imaging/A_0000_14.jpg" alt="placeholder">
+                <img src="images/imaging/A_0000_14.jpg" alt="placeholder">
             </section>
-			<article class="notes">Cubic Distort in Tokyo<br>
-Software: Photoshop, C4D<br>
-Instructor: Michael Brunsfeld<br>
-1)I created a sequence of cubes in C4D and rendered out for the Photoshop. I used ” Liquefy ” tool and tweaked the alpha channels of the images of cubes. The goal is to create some abstract shapes to match the serene photo and to form an unconventionally intriguing style.<br>
-2)Created a montage by fracturing a scene into many pieces. Select and cut pieces and jump them to a new layer —then ALTER those pieces. Tried distorting them, re-coloring them, overlapping them, re-combining them, changing opacities, then adding drop shadows to separate and get things to PoP!</article>
+            <article class="notes">
+                1)I created a sequence of cubes in C4D and rendered out for the Photoshop. I used ” Liquefy ” tool and tweaked the alpha channels of the images of cubes. The goal is to create some abstract shapes to match the serene photo and to form an unconventionally intriguing style.
+                <br> 2)Created a montage by fracturing a scene into many pieces. Select and cut pieces and jump them to a new layer —then ALTER those pieces. Tried distorting them, re-coloring them, overlapping them, re-combining them, changing opacities, then adding drop shadows to separate and get things to PoP!</article>
             <section>
-                <img src="_images/imaging/A_0001_15.jpg" alt="placeholder">
+                <img src="images/imaging/A_0001_15.jpg" alt="placeholder">
             </section>
-        
-        </div >      
-    </div>  
-    
-
-
-<!-- starting of digital art! ---------------------------------------->
+        </div>
+    </div>
+    <!-- starting of digital art! ---------------------------------------->
     <div id="drawing1" class="subpage">
         <div>
-           
-        	  <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bdrawing">Digital Art></a></li>
-            <li class="subtitle"><p class="title">Predestination</p></li>
-           </ul>
-    
-    
+            <div class="subtitle">
+                <p class="title">Predestination</p>
+                <article class="notesbig">
+                    A painting to commemorate a special moment in San Francisco station Montgomery.
+                </article>
+            </div>
             <section>
-                <img src="_images/drawing/_0002_predestination.jpg" alt="placeholder">
+                <img src="images/drawing/_0002_predestination.jpg" alt="placeholder">
+                <img src="images/drawing/B_0003_p2.jpg" alt="placeholder">
+                <img src="images/drawing/B_0004_process.jpg" alt="placeholder">
             </section>
-            <article class="notes">Predestination<br>
-Software: Photoshop, Corel Painter 11<br>
-A digital painting to commemorate a special moment in San Francisco Muni station – Montgomery</article>
-             <section>
-                <img src="_images/drawing/B_0003_p2.jpg" alt="placeholder">
-            </section>
-            <section>
-                <img src="_images/drawing/B_0004_process.jpg" alt="placeholder">
-            </section>
-        
         </div>
-    </div> <!-- end of subpage8 DRAWING-->   
-    
-    
-<div id="drawing2" class="subpage">
+    </div>
+    <!-- end of subpage8 DRAWING-->
+    <div id="drawing2" class="subpage">
         <div>
-        	  <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bdrawing">Digital Art></a></li>
-            <li class="subtitle"><p class="title">Brand Ilustration Design</p></li>
-           </ul>
-    
-    
+            <div class="subtitle">
+                <p class="title">Yingkuui ilustration</p>
+                <article class="notesbig">
+                    The illustration that shows the hometown where I grew up. It is Hangzhou which is famous for a Lake named West Lake.
+                </article>
+            </div>
             <section>
-                <img src="_images/drawing/_0000_westlake.jpg" alt="placeholder">
+                <img src="images/drawing/_0000_westlake.jpg" alt="placeholder">
             </section>
-
             <section>
-                <img src="_images/drawing/C_0000_1.jpg" alt="placeholder">
+                <img src="images/drawing/C_0000_1.jpg" alt="placeholder">
             </section>
-         
-            
-        
         </div>
-    </div> <!-- end of subpage9 DRAWING-->     
-    
-<div id="drawing3" class="subpage">
+    </div>
+    <!-- end of subpage9 DRAWING-->
+    <div id="drawing3" class="subpage">
         <div>
-        	 <ul class="breadcrumb">
-            <li><a class="bread" href="index.html">Home ></a></li>
-            <li><a href="#" class="bread sublink" bind="bdrawing">Digital Art></a></li>
-            <li class="subtitle"><p class="title">The Bubble Girl</p></li>
-           </ul>
-      
+            <div class="subtitle">
+                <p class="title">The bubble girl</p>
+                <article class="notesbig">
+                    The storyboard for describing a battle between bubble girl and machine enemy.
+                </article>
+            </div>
             <section>
-                <img src="_images/drawing/A_0000_1.jpg" alt="placeholder">
+                <img src="images/drawing/A_0000_1.jpg" alt="placeholder">
             </section>
-
-             <section>
+            <section>
         </div>
-    </div> <!-- end of subpage10 DRAWING-->  
-
-
-
-
-<footer id="footer">
-  <section class="copyright">
-      <p>© 2015
-            <span>
+    </div>
+    <!-- end of subpage10 DRAWING-->
+    <footer id="footer">
+        <section class="copyright">
+            <p>© 2015
+                <span>
                 <a href="http://mailto:gaoqihz@gmail.com">QiGao</a>          
-            </span>
-        .Made in San Francisco.
-        </p>
-    </section>
-</footer>
-
-  <div style="display:none;" class="nav_up" id="nav_up"></div>
-  <div style="display:none;" class="nav_down" id="nav_down"></div>
-
-<!-- scroll up and down -->
-
-
-  <script src="js/waypoints.min.js"></script>
-
+            </span> .Made in Palo Alto.
+            </p>
+        </section>
+    </footer>
+    <div style="display:none;" class="nav_up" id="nav_up"></div>
+    <div style="display:none;" class="nav_down" id="nav_down"></div>
+    <!-- scroll up and down -->
+    <script src="js/waypoints.min.js"></script>
     <script src="http://bigspotteddog.github.io/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
+    <script>
+    $(function() {
+        var $elem = $('#mainpage');
 
-		<script>
-			$(function() {
-				var $elem = $('#mainpage');
-				
-				$('#nav_up').fadeIn('slow');
-				$('#nav_down').fadeIn('slow');  
-				
-				$(window).bind('scrollstart', function(){
-					$('#nav_up,#nav_down').stop().animate({'opacity':'0.2'});
-				});
-				$(window).bind('scrollstop', function(){
-					$('#nav_up,#nav_down').stop().animate({'opacity':'1'});
-				});
-				
-				$('#nav_down').click(
-					function (e) {
-						$('html, body').animate({scrollTop: $elem.height()}, 800);
-					}
-				);
-				$('#nav_up').click(
-					function (e) {
-						$('html, body').animate({scrollTop: '0px'}, 800);
-					}
-				);
+        $('#nav_up').fadeIn('slow');
+        $('#nav_down').fadeIn('slow');
+
+        $(window).bind('scrollstart', function() {
+            $('#nav_up,#nav_down').stop().animate({
+                'opacity': '0.2'
             });
-        </script>
-        
-<!-- scroll to work-->        
-        
-        <script>
-			$(function() {
-		
-				
-
-				$('.toworkplace').click(
-					function (e) {
-						$('html, body').animate({scrollTop: '250px'}, 800);
-					}
-				);
-				
+        });
+        $(window).bind('scrollstop', function() {
+            $('#nav_up,#nav_down').stop().animate({
+                'opacity': '1'
             });
-        </script>
-        
+        });
 
-	<script>
-			//  The function to change the class
-			var changeClass = function (r,className1,className2) {
-				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
-				if( regex.test(r.className) ) {
-					r.className = r.className.replace(regex,' '+className2+' ');
-			    }
-			    else{
-					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
-			    }
-			    return r.className;
-			};	
+        $('#nav_down').click(
+            function(e) {
+                $('html, body').animate({
+                    scrollTop: $elem.height()
+                }, 800);
+            }
+        );
+        $('#nav_up').click(
+            function(e) {
+                $('html, body').animate({
+                    scrollTop: '0px'
+                }, 800);
+            }
+        );
+    });
+    </script>
+    <!-- scroll to work-->
+    <script>
+    $(function() {
 
-			//  Creating our button in JS for smaller screens
-			var menuElements = document.getElementById('menu');
-			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
 
-			//  Toggle the class on click to show / hide the menu
-			document.getElementById('menutoggle').onclick = function() {
-				changeClass(this, 'navtoogle active', 'navtoogle');
-			}
-		</script>
-        <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-43531133-1', 'gao-qi.com');
-  ga('send', 'pageview');
+        $('.toworkplace').click(
+            function(e) {
+                $('html, body').animate({
+                    scrollTop: '500px'
+                }, 800);
+            }
+        );
 
-</script>
-<script>
- $(document).ready(function() {
+    });
+    </script>
+    <script>
+    //  The function to change the class
+    var changeClass = function(r, className1, className2) {
+        var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+        if (regex.test(r.className)) {
+            r.className = r.className.replace(regex, ' ' + className2 + ' ');
+        } else {
+            r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"), ' ' + className1 + ' ');
+        }
+        return r.className;
+    };
+
+    //  Creating our button in JS for smaller screens
+    var menuElements = document.getElementById('menu');
+    menuElements.insertAdjacentHTML('afterBegin', '<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
+
+    //  Toggle the class on click to show / hide the menu
+    document.getElementById('menutoggle').onclick = function() {
+        changeClass(this, 'navtoogle active', 'navtoogle');
+    }
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-43531133-1', 'gao-qi.com');
+    ga('send', 'pageview');
+    </script>
+    <script>
+    $(document).ready(function() {
 
         // $(".subHeaderScrollFixed").hide();
 
@@ -1864,17 +1399,17 @@ A digital painting to commemorate a special moment in San Francisco Muni station
         // This is the default behavior.
 
         $('.header').scrollToFixed();
-        
-        $('#options').scrollToFixed({marginTop:50});    
+
+        $('#options').scrollToFixed({
+            marginTop: 50
+        });
 
         // $('.subHeaderScrollFixed').scrollToFixed({marginTop:120});
 
 
-        
+
     });
-
-</script>
-
+    </script>
 </body>
-	
+
 </html>
