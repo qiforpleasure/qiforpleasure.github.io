@@ -5,4 +5,4 @@ User-agent: *
 Disallow:
 
 # Announce sitemap - https://support.google.com/webmasters/answer/183668
-Sitemap: http://www.maimaichen.com/sitemap.xml
+Sitemap: http://www.qi-gao.com/sitemap.xml

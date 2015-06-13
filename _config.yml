@@ -1,19 +1,18 @@
 # Site settings
 
-title: 买卖晨 － 聚宝盆
-tagline: 最实用的淘指南!
-email: maimaichen_admin@163.com
-copyright: MaiMaiChen
+title: My website
+email: gaoqihz@gmail.com
+copyright: Qi Gao
 keywords: open theme, github pages, semantic ui, single page apps
 
 description: > # this means to ignore newlines until "url:". One indent required.
   Powerful new theme featuring Semantic UI for speedily creating amazing websites and mobile-hybrid apps on GitHub Pages.
 
 # the base hostname & protocol for your site
-url: "http://www.maimaichen.com"
+url: "http://www.qi-gao.com"
 
-twitter_username: maimaichen
-github_username:  maimaichen
+twitter_username: gaoqihz
+github_username:  gaoqihz
 
 default_image: /img/opentheme-workflow.png
 
