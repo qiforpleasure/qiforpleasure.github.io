@@ -1,1 +1,0 @@
-# qiforpleasure.github.io
